@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  {{insert basic/stylesheets.html}}
+  
+  {{isdef website_title}} <title>{{fill website_title}}</title>  {{end}}
+</head>
+<body>
+
+  {{if cover}}
+    {{insert extra/cover.html}}
+  {{else}}
+    {{insert extra/nav.html}}
+    {{insert extra/sidebar.html}}
+  {{end}}
+<!-- Content appended here -->

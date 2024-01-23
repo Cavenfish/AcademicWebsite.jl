@@ -1,0 +1,80 @@
+
+:root {
+    background-color: purple;
+}
+
+div.cover-body {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    align-content: center;
+    padding-top: 5%;
+
+    h1 {
+        text-align: center;
+        border-bottom: none;
+    }
+
+    ul {
+        text-align: center;
+        padding: 0;
+    }
+}
+
+.cover-photo img {
+    width: 50%;
+    align-self: center;
+    clip-path: circle();
+}
+
+li {
+    list-style: none;
+    display: inline;
+    margin: 15px;
+
+    a {
+      display: inline-block;
+    }
+}
+
+.cover-button {
+    padding: 10px;
+    border-radius: 10px;
+    background: silver;
+    text-decoration: none;
+    color: black;
+}
+
+.page-foot {
+    padding-top: 0;
+    margin-top: 0;
+}
+
+/*-----------
+    Icons 
+-----------*/
+
+/* Google Scholar */
+.fa-graduation-cap {
+    color: #4c9cf1;
+}
+  
+/* GitHub */
+.fa-brands.fa-github {
+    color: black;
+}
+
+/* ORCID */
+.fa-brands.fa-orcid {
+    color: greenyellow;
+}
+
+/* ResearchGate */
+.fa-brands.fa-researchgate {
+    color: mediumspringgreen;
+}
+
+/* LinkedIn */
+.fa-brands.fa-linkedin {
+    color: #4c9cf1;
+}

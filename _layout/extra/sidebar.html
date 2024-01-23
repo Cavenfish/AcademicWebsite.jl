@@ -1,0 +1,18 @@
+<div class="academic-sidebar">
+    <div class="author_avatar">
+        <img src={{fill my_picture}} class="author_avatar" alt="Author Name">
+    </div>
+
+    <h3>{{fill author}}</h3>
+
+    {{fill my_bio}}
+    <br><br>
+
+    {{for (link, icon) in links}}
+      <li>
+        <a href="{{fill link}}" target=_blank>
+            <i class="{{fill icon}}" aria-hidden="true"></i>
+        </a>
+      </li>
+    {{end}}
+</div>
