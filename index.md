@@ -16,7 +16,9 @@ cover = true
 
 \br{n=2}
 
-\coverButton{ref="/menu1", txt="menu1"}
+\coverButton{ref="/menu1", txt="About Me"}
+\coverButton{ref="/menu2", txt="menu2"}
+\coverButton{ref="/menu3", txt="menu3"}
 
 \br{n=3}
 

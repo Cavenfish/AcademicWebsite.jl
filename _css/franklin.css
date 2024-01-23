@@ -183,7 +183,7 @@ td {
 ================================================================== */
 
 /* Spacing between bullet points. */
-.franklin-content li p {
+/* .franklin-content li p {
   margin: 10px 0;
 }
 
@@ -194,7 +194,7 @@ td {
 
 .franklin-content a:hover {
   text-decoration: underline;
-}
+} */
 
 /* ==================================================================
     HYPERREFS AND FOOTNOTES
