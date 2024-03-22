@@ -1,6 +1,6 @@
 
 :root {
-    background-color: purple;
+    background-color: rgb(255, 255, 255);
 }
 
 div.cover-body {
@@ -40,9 +40,9 @@ li {
 .cover-button {
     padding: 10px;
     border-radius: 10px;
-    background: pink;
+    background: rgb(184, 179, 180);
     text-decoration: none;
-    color: purple;
+    color: rgb(0, 0, 0);
 }
 
 .page-foot {
