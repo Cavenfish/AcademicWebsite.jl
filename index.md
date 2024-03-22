@@ -14,11 +14,9 @@ cover = true
 
 {{my_bio}}
 
-\br{n=2}
+\br{n=3}
 
-\coverButton{ref="/menu1", txt="About Me"}
-\coverButton{ref="/menu2", txt="menu2"}
-\coverButton{ref="/menu3", txt="menu3"}
+\coverButton{ref="/pages/aboutMe", txt="About Me"}
 
 \br{n=3}
 
