@@ -4,22 +4,30 @@ cover = true
 
 +++
 
-\begin{coverBody}{}
-
+~~~
+<div class="cover-photo">
+~~~
+![]({{my_picture}})
+~~~
+</div>
+<div class="cover-body">
+~~~
 # {{author}}
 
-@@cover-photo ![]({{my_picture}})@@
-
-\br{n=2}
+\br{n=1}
 
 {{my_bio}}
 
 \br{n=3}
 
-\coverButton{ref="/pages/aboutMe", txt="About Me"}
+\coverButton{ref="/pages/aboutMe", txt="See More"}
 
-\br{n=3}
-
+\br{n=1}
+~~~
+</div>
+<div class="cover-links">
+~~~
 \coverLinks{}
-
-\end{coverBody}
+~~~
+</div>
+~~~
