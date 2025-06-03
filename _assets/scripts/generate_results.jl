@@ -18,10 +18,4 @@ function genplain(s::String)
     end
 end
 
-# output
-
-# genplain("script1.jl")
-
-# plots
-
-include("script1.jl")
+# genplain("some_script.jl")
