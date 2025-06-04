@@ -14,7 +14,9 @@ links = [
     ("https://github.com", "fa fa-brands fa-github"),
     ("https://orcid.org", "fa fa-brands fa-orcid"),
     ("https://www.linkedin.com", "fa fa-brands fa-linkedin"),
-    ("https://www.researchgate.net", "fa fa-brands fa-researchgate")
+    ("https://www.researchgate.net", "fa fa-brands fa-researchgate"),
+    ("https://bsky.app/", "fa fa-brands fa-bluesky"),
+    ("https://mastodon.social/explore", "fa fa-brands fa-mastodon")
 ]
 
 mintoclevel = 2
