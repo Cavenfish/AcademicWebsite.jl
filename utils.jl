@@ -1,6 +1,7 @@
 using TOML, FranklinUtils
 
 const ROOT = Franklin.FOLDER_PATH[]
+const CONF = TOML.parsefile("./config.toml")
 
 include("./utils/cover.jl")
 include("./utils/sidebar.jl")

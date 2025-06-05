@@ -12,7 +12,7 @@ end
 
 @lx function coverLinks(; id="")
   io    = IOBuffer()
-  links = globvar("links")
+  links = CONF["general"]["links"]
 
   write(io, "<ul>")
   for link in links

@@ -1,6 +1,19 @@
 
-function hfun_sidebar_links(params)
-  links  = locvar(params[1])
+function add_link(io, link, icon)
+  write(
+    io, 
+    """
+    <li>
+      <a href=\"$(link)\" target=_blank>
+        <i class=\"$(icon)\" aria-hidden=\"true\"></i>
+      </a>
+    </li>
+    """
+  )
+end
+
+function hfun_sidebar_links()
+  links  = CONF["general"]["links"]
   n      = length(links)
   io     = IOBuffer()
   nrows  = n / 5 |> ceil
@@ -8,16 +21,7 @@ function hfun_sidebar_links(params)
 
   for i = 1:nshort
     link, icon = links[i]
-    write(
-      io, 
-      """
-      <li>
-        <a href=\"$(link)\" target=_blank>
-          <i class=\"$(icon)\" aria-hidden=\"true\"></i>
-        </a>
-      </li>
-      """
-    )
+    add_link(io, link, icon)
   end
 
   write(io, "<br><br>\n")
@@ -29,16 +33,7 @@ function hfun_sidebar_links(params)
       i = 0
     end
 
-    write(
-      io, 
-      """
-      <li>
-        <a href=\"$(link)\" target=_blank>
-          <i class=\"$(icon)\" aria-hidden=\"true\"></i>
-        </a>
-      </li>
-      """
-    )
+    add_link(io, link, icon)
 
     i += 1
   end
