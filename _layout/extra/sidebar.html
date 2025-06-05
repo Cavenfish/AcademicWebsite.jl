@@ -8,11 +8,5 @@
     {{fill my_bio}}
     <br><br>
 
-    {{for (link, icon) in links}}
-      <li>
-        <a href="{{fill link}}" target=_blank>
-            <i class="{{fill icon}}" aria-hidden="true"></i>
-        </a>
-      </li>
-    {{end}}
+    {{sidebar_links links}}
 </div>

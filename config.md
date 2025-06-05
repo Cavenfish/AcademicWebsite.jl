@@ -22,7 +22,11 @@ links = [
 mintoclevel = 2
 
 # Files to ignore
-ignore = ["node_modules/"]
+ignore = [
+    "node_modules/",
+    "Manifest.toml",
+    "Project.toml"
+]
 
 # RSS 
 generate_rss = true
