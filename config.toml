@@ -9,3 +9,22 @@ links = [
     ["https://mastodon.social/explore", "fa fa-brands fa-mastodon"]
 ]
 
+[team]
+jane.alt = "Human"
+jane.name = "A. Person"
+jane.image = "/assets/figs/profile.png"
+jane.title = "Postdoc"
+jane.bio = "A short bio here"
+jane.email = "some.email@uni.edu"
+another.alt = "Human"
+another.name = "B. Person"
+another.image = "/assets/figs/profile.png"
+another.title = "PhD Student"
+another.bio = "A short bio here"
+another.email = "some.email@uni.edu"
+more.alt = "Human"
+more.name = "C. Person"
+more.image = "/assets/figs/profile.png"
+more.title = "Undergraduate Student"
+more.bio = "A short bio here"
+more.email = "some.email@uni.edu"

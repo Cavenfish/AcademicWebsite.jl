@@ -6,6 +6,7 @@ const CONF = TOML.parsefile("./config.toml")
 include("./utils/cover.jl")
 include("./utils/sidebar.jl")
 include("./utils/showcase.jl")
+include("./utils/cards.jl")
 
 function hfun_navigation()
   io  = IOBuffer()
