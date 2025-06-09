@@ -1,4 +1,7 @@
 [general]
+author = "Your Name Here"
+my_picture = "/assets/figs/rndimg.jpg"
+my_bio = "Your short bio here."
 links = [
     ["https://scholar.google.com", "fa fa-graduation-cap"],
     ["https://github.com", "fa fa-brands fa-github"],
@@ -10,6 +13,7 @@ links = [
 ]
 
 [team]
+order = ["jane", "another", "more"]
 jane.alt = "Human"
 jane.name = "A. Person"
 jane.image = "/assets/figs/profile.png"

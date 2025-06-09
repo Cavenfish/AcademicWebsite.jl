@@ -2,6 +2,10 @@
     Header and Nav
 ================================================================== */
 
+body {
+  overflow-x: hidden;
+}
+
 nav {
   width: 64%;
   display: inline-block;

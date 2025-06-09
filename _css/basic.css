@@ -1,6 +1,9 @@
 /* ==================================================================
     Header and Nav
 ================================================================== */
+body {
+  overflow-x: hidden;
+}
 
 nav {
   width: 64%;
@@ -71,14 +74,12 @@ header li a:hover {
     padding-right: 6%;
   }
 }
-
 @media (min-width: 481px) {
   header {
     padding-left: 12.5%;
     padding-right: 12.5%;
   }
 }
-
 /* wide display: enforce maximum width of header to match content */
 @media (min-width: 940px) {
   header {
@@ -87,24 +88,22 @@ header li a:hover {
     margin-right: auto;
   }
 }
-
 /*
 medium display: nav goes under name
 */
 @media (max-width: 760px) {
-  header { display: block; }
-
+  header {
+    display: block;
+  }
   header .blog-name {
     display: block;
     width: 100%;
     padding-bottom: 10px;
   }
-
   nav {
     width: 100%;
   }
 }
-
 /*
 narrow display: collapse the header (don't show the menu items)
 instead, display a burger menu.
@@ -115,22 +114,18 @@ instead, display a burger menu.
     display: flex;
     align-items: center;
   }
-
   header .blog-name {
     display: inline-block;
     width: 70%;
   }
-
   nav {
     display: inline-block;
     width: 27%;
   }
-
   nav ul,
   nav:active ul {
     display: none;
     position: absolute;
-
     /* padding: 20px; */
     background: #fff;
     border: 1px solid #444;
@@ -140,27 +135,27 @@ instead, display a burger menu.
     border-radius: 4px 0 4px 4px;
     z-index: 1;
   }
-
   nav li {
     text-align: left;
     display: block;
     padding: 0;
     margin: 0;
   }
-  header li a { border-bottom: none; }
-  header li a:hover { border-bottom: none; }
-
+  header li a {
+    border-bottom: none;
+  }
+  header li a:hover {
+    border-bottom: none;
+  }
   nav:hover ul {
     display: block;
   }
-
   #menu-icon {
     display: inline-block;
     margin-right: 10px;
     margin-top: 5px;
   }
 }
-
 table {
   line-height: 1em;
   margin-left: auto;

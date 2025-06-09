@@ -1,16 +1,12 @@
 
-@lx function coverButton(; ref="", txt="")
-  html("""<a href="$(ref)" class="cover-button">$(txt)</a>""")
+function hfun_cover()
+  style = locvar("style")
+  file  = "./_layout/cover/$(style).html" 
+  
+  read(file, String) |> Franklin.convert_html
 end
 
-@env function coverBody(md; class="")
-  html("""
-  <div class="cover-body">""") * md * html("""
-  </div>
-  """)
-end
-
-@lx function coverLinks(; id="")
+function hfun_cover_links()
   io    = IOBuffer()
   links = CONF["general"]["links"]
 
@@ -25,6 +21,5 @@ end
   end
   write(io, "</ul>")
 
-  take!(io) |> String |> html
+  take!(io) |> String
 end
-

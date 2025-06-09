@@ -1,36 +1,25 @@
-
-
-div.academic-sidebar {
-    height: 100%;
-    width: 15%;
-  
-    list-style: none;
-    text-align: center;
-    position: fixed;
-    
-    padding-top: 5%;
-    padding-left: 2%;
-
-    h3 {
-      text-align: center;
-    }
-  }
-
-  li {
-    list-style: none;
-    display: inline;
-    margin: 0;
-    padding: 5px;
-
-    a {
-      display: inline-block;
-    }
-
-  }
-  
-  .author_avatar {
-    img {
-      max-width: 175px;
-      clip-path: circle();
-    }
-  }
+.academic-sidebar {
+  height: 100%;
+  width: 15%;
+  list-style: none;
+  text-align: center;
+  position: fixed;
+  padding-top: 5%;
+  padding-left: 2%;
+}
+.academic-sidebar h3 {
+  text-align: center;
+}
+.academic-sidebar li {
+  list-style: none;
+  display: inline;
+  margin: 0;
+  padding: 5px;
+}
+.academic-sidebar li a {
+  display: inline-block;
+}
+.academic-sidebar .author_avatar img {
+  max-width: 175px;
+  clip-path: circle();
+}

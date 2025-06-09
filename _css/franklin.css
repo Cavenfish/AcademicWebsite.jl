@@ -1,7 +1,6 @@
 /* ==================================================================
     VARIABLES
 ================================================================== */
-
 :root {
   --block-background: hsl(0, 0%, 94%);
   --output-background: hsl(0, 0%, 0%);
@@ -13,7 +12,6 @@
 /* ==================================================================
     DEFAULT FONT AND LAYOUT
 ================================================================== */
-
 html {
   font-family: Helvetica, Arial, sans-serif;
   font-size: var(--normal);
@@ -23,7 +21,6 @@ html {
 /* ==================================================================
     BASIC GRID FOR PROFILE PIC
 ================================================================== */
-
 .franklin-content .row {
   display: block;
 }
@@ -52,7 +49,6 @@ html {
 /* ==================================================================
     FOOT / COPYRIGHT
 ================================================================== */
-
 .franklin-content .page-foot a {
   text-decoration: none;
   color: #a6a2a0;
@@ -74,7 +70,6 @@ html {
 /* ==================================================================
     TEXT GEOMETRY
 ================================================================== */
-
 .franklin-toc li {
   /* Avoid clickable elements being too close together. */
   margin: 0.6rem 0;
@@ -95,7 +90,6 @@ html {
     margin-right: auto;
   }
 }
-
 /* On narrow device, reduce margins. */
 @media (max-width: 480px) {
   .franklin-content {
@@ -103,14 +97,20 @@ html {
     padding-right: 6%;
   }
 }
-
 /* ==================================================================
     TITLES
 ================================================================== */
+.franklin-content h1 {
+  font-size: 24px;
+}
 
-.franklin-content h1 { font-size: 24px; }
-.franklin-content h2 { font-size: 22px; }
-.franklin-content h3 { font-size: 20px; }
+.franklin-content h2 {
+  font-size: 22px;
+}
+
+.franklin-content h3 {
+  font-size: 20px;
+}
 
 .franklin-content h1,
 h2,
@@ -135,18 +135,53 @@ h6 {
   margin-bottom: 1em;
 }
 
-.franklin-content h1 a { color: inherit; }
-.franklin-content h1 a:hover { text-decoration: none; }
-.franklin-content h2 a { color: inherit; }
-.franklin-content h2 a:hover { text-decoration: none; }
-.franklin-content h3 a { color: inherit; }
-.franklin-content h3 a:hover { text-decoration: none; }
-.franklin-content h4 a { color: inherit; }
-.franklin-content h4 a:hover { text-decoration: none; }
-.franklin-content h5 a { color: inherit; }
-.franklin-content h5 a:hover { text-decoration: none; }
-.franklin-content h6 a { color: inherit; }
-.franklin-content h6 a:hover { text-decoration: none; }
+.franklin-content h1 a {
+  color: inherit;
+}
+
+.franklin-content h1 a:hover {
+  text-decoration: none;
+}
+
+.franklin-content h2 a {
+  color: inherit;
+}
+
+.franklin-content h2 a:hover {
+  text-decoration: none;
+}
+
+.franklin-content h3 a {
+  color: inherit;
+}
+
+.franklin-content h3 a:hover {
+  text-decoration: none;
+}
+
+.franklin-content h4 a {
+  color: inherit;
+}
+
+.franklin-content h4 a:hover {
+  text-decoration: none;
+}
+
+.franklin-content h5 a {
+  color: inherit;
+}
+
+.franklin-content h5 a:hover {
+  text-decoration: none;
+}
+
+.franklin-content h6 a {
+  color: inherit;
+}
+
+.franklin-content h6 a:hover {
+  text-decoration: none;
+}
 
 .franklin-content table {
   margin-left: auto;
@@ -181,7 +216,6 @@ td {
 /* ==================================================================
     GENERAL FORMATTING
 ================================================================== */
-
 /* Spacing between bullet points. */
 /* .franklin-content li p {
   margin: 10px 0;
@@ -195,13 +229,16 @@ td {
 .franklin-content a:hover {
   text-decoration: underline;
 } */
-
 /* ==================================================================
     HYPERREFS AND FOOTNOTES
 ================================================================== */
+.franklin-content .eqref a {
+  color: green;
+}
 
-.franklin-content .eqref a { color: green; }
-.franklin-content .bibref a { color: green; }
+.franklin-content .bibref a {
+  color: green;
+}
 
 .franklin-content sup {
   font-size: 70%;
@@ -240,7 +277,6 @@ td {
 /* ==================================================================
     IMAGES in CONTENT
 ================================================================== */
-
 .franklin-content img {
   width: 70%;
   text-align: center;
@@ -256,15 +292,17 @@ td {
 /* ==================================================================
     KATEX
 ================================================================== */
+body {
+  counter-reset: eqnum;
+}
 
-body { counter-reset: eqnum; }
-
-.katex { font-size: 1em !important; }
+.katex {
+  font-size: 1em !important;
+}
 
 .katex-display .katex {
   /* Overwrite KaTeX settings. */
   display: inline-block;
-
   /* Allow display equations to wrap on small screens. */
   white-space: normal;
 }
@@ -285,7 +323,6 @@ body { counter-reset: eqnum; }
 /* ==================================================================
     CODE & HIGHLIGHT.JS
 ================================================================== */
-
 code {
   background-color: var(--block-background);
   padding: 0.1em 0.2em;
@@ -294,25 +331,27 @@ code {
 }
 
 /* .franklin-content code { */
-
 /* background-color: rgba(27,31,35,0.05); */
-
 /* padding: 0.1em 0.2em; */
-
 /* border-radius: 2px; */
-
 /* font-size: 90%; } */
-
 .hljs {
   font-size: var(--small);
   line-height: 1.35em;
   border-radius: 10px;
 }
 
-.hljs-meta { font-weight: bold;}
+.hljs-meta {
+  font-weight: bold;
+}
 
-.hljs-meta.shell_ {color: crimson;}
-.hljs-meta.prompt_ {color: rgb(25, 179, 51);}
+.hljs-meta.shell_ {
+  color: crimson;
+}
+
+.hljs-meta.prompt_ {
+  color: rgb(25, 179, 51);
+}
 
 .code-output {
   background: var(--output-background);
@@ -322,7 +361,6 @@ code {
 /* ==================================================================
     BOXES
 ================================================================== */
-
 .franklin-content .colbox-blue {
   background-color: #eef3f5;
   padding-top: 5px;

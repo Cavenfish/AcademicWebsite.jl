@@ -1,7 +1,4 @@
-
-:root {
-  background-color: rgb(255, 255, 255);
-}
+@use "vars";
 
 @media (min-width: 940px) {
   .franklin-content {
@@ -11,72 +8,77 @@
   }
 }
 
+body {
+  overflow: hidden;
+}
+
 .franklin-content {
-  padding-top: 5%;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding: 0;
   align-content: center;
-}
-
-div.cover-body {
-  height: 90%;
-  text-align: left;
-  align-content: center;
-  padding-top: 5%;
-  margin-left: 57.5%;
-
-  h1 {
-    text-align: left;
-    border-bottom: none;
-  }
-
-  ul {
-    text-align: center;
-    padding: 0;
-  }
-}
-
-div.cover-photo {
-  height: 90%;
-  width: 40%;
-  text-align: right;
-  align-content: center;
-  float: left;
-  margin-left: 12.5%;
-
-  img {
-    width: 100%;
-    align-self: center;
-    clip-path: circle();
-  }
-}
-
-div.cover-links {
-  width: 100%;
-  text-align: center;
-  align-content: center;
-  padding-top: 5%;
-
-  li {
-    list-style: none;
-    display: inline;
-    margin: 15px;
-  
-    a {
-      display: inline-block;
-    }
-  }
-}
-
-.cover-button {
-  padding: 10px;
-  border-radius: 10px;
-  background: rgb(184, 179, 180);
-  text-decoration: none;
-  color: rgb(0, 0, 0);
 }
 
 .page-foot {
   padding-top: 0;
   margin-top: 0;
+}
+
+.cover {
+  padding: 5%;
+  padding-bottom: 0;
+
+  .cover-photo {
+    width: 40%;
+    text-align: right;
+    align-content: center;
+    float: left;
+    margin-left: 12.5%;
+
+    img {
+      width: 100%;
+      align-self: center;
+      clip-path: circle();
+    }
+  }
+
+  .cover-body {
+    height: 75%;
+    text-align: left;
+    align-content: center;
+    padding-left: 25px;
+    padding-right: 10%;
+    padding-top: 5%;
+    padding-bottom: 0;
+
+    .title {
+      text-align: left;
+      font-size: vars.$large;
+      font-weight: bold;
+    }
+  }
+
+  .cover-links {
+    width: 100%;
+    text-align: center;
+    align-content: center;
+    padding-top: 5%;
+
+    li {
+      list-style: none;
+      display: inline;
+      margin: 15px;
+
+      a {
+        display: inline-block;
+      }
+    }
+  }
+
+  .cover-button {
+    width: auto;
+    padding: 10px;
+    border-radius: 10px;
+    background: vars.$primary-background;
+    text-decoration: none;
+    color: vars.$primary-foreground;
+  }
 }

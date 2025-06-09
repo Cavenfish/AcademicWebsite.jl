@@ -1,15 +1,11 @@
-div.masthead {
-    position: relative;
-    border-bottom: 2px solid black;
-
-    padding-left: 3%;
-
-    nav {
-        width: 100%;
-        height: 20%;
-        text-align: left;
-        padding: 1%;
-    }
-
-    
+.masthead {
+  position: relative;
+  border-bottom: 2px solid black;
+  padding-left: 3%;
+}
+.masthead nav {
+  width: 100%;
+  height: 20%;
+  text-align: left;
+  padding: 1%;
 }
