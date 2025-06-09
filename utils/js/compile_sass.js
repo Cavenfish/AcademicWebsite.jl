@@ -4,7 +4,7 @@ const sass = require("sass");
 function compile_sass() {
   fs.readdirSync("./_sass").forEach(file => {
     const sassFile = "./_sass/" + file;
-    const cssFile  = "./_sass/" + file.replace(".scss", ".css");
+    const cssFile  = "./_css/" + file.replace(".scss", ".css");
 
     const result = sass.compile(sassFile);
     
