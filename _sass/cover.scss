@@ -1,0 +1,82 @@
+
+:root {
+  background-color: rgb(255, 255, 255);
+}
+
+@media (min-width: 940px) {
+  .franklin-content {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.franklin-content {
+  padding-top: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  align-content: center;
+}
+
+div.cover-body {
+  height: 90%;
+  text-align: left;
+  align-content: center;
+  padding-top: 5%;
+  margin-left: 57.5%;
+
+  h1 {
+    text-align: left;
+    border-bottom: none;
+  }
+
+  ul {
+    text-align: center;
+    padding: 0;
+  }
+}
+
+div.cover-photo {
+  height: 90%;
+  width: 40%;
+  text-align: right;
+  align-content: center;
+  float: left;
+  margin-left: 12.5%;
+
+  img {
+    width: 100%;
+    align-self: center;
+    clip-path: circle();
+  }
+}
+
+div.cover-links {
+  width: 100%;
+  text-align: center;
+  align-content: center;
+  padding-top: 5%;
+
+  li {
+    list-style: none;
+    display: inline;
+    margin: 15px;
+  
+    a {
+      display: inline-block;
+    }
+  }
+}
+
+.cover-button {
+  padding: 10px;
+  border-radius: 10px;
+  background: rgb(184, 179, 180);
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.page-foot {
+  padding-top: 0;
+  margin-top: 0;
+}

@@ -1,0 +1,30 @@
+.academic-sidebar {
+  height: 100%;
+  width: 15%;
+
+  list-style: none;
+  text-align: center;
+  position: fixed;
+  
+  padding-top: 5%;
+  padding-left: 2%;
+
+  li {
+    list-style: none;
+    display: inline;
+    margin: 0;
+    padding: 5px;
+
+    a {
+      display: inline-block;
+    }
+
+  }
+
+  .author_avatar {
+    img {
+      max-width: 175px;
+      clip-path: circle();
+    }
+  }
+}
