@@ -54,16 +54,23 @@ body {
       font-size: vars.$large;
       font-weight: bold;
     }
+  }
+
+  .cover-nav {
+    width: 100%;
+    text-align: center;
+    align-content: center;
+    padding-top: 5%;
 
     .cover-button {
       width: auto;
-      display: flex;
       padding: 10px;
+      display: inline;
       color: vars.$primary-foreground;
-      background: vars.$secondary-background;
+      background: vars.$primary-background;
       border-color: vars.$primary-foreground;
       border-width: 1px;
-      border-radius: 5px;
+      align-content: center;
 
       a {
         color: vars.$primary-foreground;
@@ -77,7 +84,7 @@ body {
     width: 100%;
     text-align: center;
     align-content: center;
-    padding-top: 5%;
+    padding-top: 10px;
 
     li {
       list-style: none;
