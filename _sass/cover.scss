@@ -41,7 +41,7 @@ body {
   }
 
   .cover-body {
-    height: 75%;
+    height: 85%;
     text-align: left;
     align-content: center;
     padding-left: 25px;
@@ -53,6 +53,23 @@ body {
       text-align: left;
       font-size: vars.$large;
       font-weight: bold;
+    }
+
+    .cover-button {
+      width: auto;
+      display: flex;
+      padding: 10px;
+      color: vars.$primary-foreground;
+      background: vars.$secondary-background;
+      border-color: vars.$primary-foreground;
+      border-width: 1px;
+      border-radius: 5px;
+
+      a {
+        color: vars.$primary-foreground;
+        font-size: vars.$normal;
+        text-decoration: none;
+      }
     }
   }
 
@@ -71,14 +88,5 @@ body {
         display: inline-block;
       }
     }
-  }
-
-  .cover-button {
-    width: auto;
-    padding: 10px;
-    border-radius: 10px;
-    background: vars.$primary-background;
-    text-decoration: none;
-    color: vars.$primary-foreground;
   }
 }

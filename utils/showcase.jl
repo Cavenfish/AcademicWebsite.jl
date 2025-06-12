@@ -1,48 +1,95 @@
 
-@lx function showcase(; ref="", byyear=false)
+function prep_items(toml)
+  items = [toml[k] for k in keys(toml)]
+
+  sort(items, by=(e -> e["date"]), rev=true)
+end
+
+@lx function showcase(ref; byyear=false)
 
   file = joinpath(ROOT, "_assets", "items", ref)
 
-  toml = TOML.parsefile(file)
-
-  items = [i[2] for i in toml] |> (x -> sort(x, by=(e->e["date"]), rev=true))
+  items = TOML.parsefile(file) |> prep_items
 
   isempty(items) && return ""
 
   io      = IOBuffer()
-  curyear = year(items[1]["date"])
+  curyear = year(1e16)
 
-  byyear && write(io, "~~~\n<h2>$(curyear)</h2>\n~~~\n")
+  write(
+    io, 
+    """
+    <div class="showcase">
+      <ul>
+    """
+  )
 
   for item in items
     if byyear && year(item["date"]) < curyear
       curyear = year(item["date"])
-      write(io, "~~~\n<h2>$(curyear)</h2>\n~~~\n")
+      write(
+        io,
+        """
+        </ul>
+        <div class="year-heading">
+          <h2>$(curyear)</h2>
+        </div>
+        <ul>
+        """ 
+      )
     end
 
-    title  = item["title"]
-    date   = item["date"]
-    bullet = "~~~<p>"
+    title   = item["title"]
+    date    = item["date"]
+    authors = haskey(item, "authors") ? item["authors"] : ""
+    journal = haskey(item, "journal") ? item["journal"] : ""
+    venue   = haskey(item, "venue") ? item["venue"] : ""
 
-    haskey(item, "url") ?
-    bullet *= "<a href=\"$(item["url"])\"> $(title) </a><br>" :
-    bullet *= "$(title)<br>"
+    if haskey(item, "url")
+      write(
+        io,
+        """
+        <li>
+          <div class="showcase-title">
+            <a href="$(item["url"])">$(title)</a>
+          </div>
+        """
+      )
+    else
+      write(
+        io,
+        """
+        <li>
+          <div class="showcase-title">
+            $(title)
+          </div>
+        """
+      )
+    end
 
-    haskey(item, "authors") ? 
-    bullet *= "<small>$(item["authors"])</small><br>" : nothing
-
-    haskey(item, "venue") ? 
-    bullet *= "<small><i>$(item["venue"])</i></small>" : nothing
-
-    haskey(item, "journal") ? 
-    bullet *= "<small><i>$(item["journal"])</i></small>" : nothing
-
-    haskey(item, "url") ? url = item["url"] : url = ""
-
-    bullet *= "</p>~~~"
-
-    write(io, "- $(bullet)\n")
+    write(
+      io,
+      """
+        <div class="showcase-body">
+          $(authors)
+          <br>
+          <i>
+            $(venue)
+            $(journal)
+          </i>
+        </div>
+      </li>
+      """
+    )
   end
 
-  take!(io) |> String 
+  write(
+    io, 
+    """
+      </ul>
+    </div>
+    """
+  )
+
+  take!(io) |> String |> html
 end

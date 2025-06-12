@@ -1,0 +1,30 @@
+@use "vars";
+
+.showcase {
+  width: 100%;
+  height: 100%;
+
+  .year-heading {
+    h2 {
+      border-bottom: none;
+      color: vars.$primary-foreground;
+    }
+  }
+
+  .showcase-title {
+    color: vars.$secondary-foreground;
+
+    a {
+      text-decoration: none;
+      color: vars.$secondary-foreground;
+    }
+  }
+
+  ul {
+    padding-left: 50px;
+  }
+
+  .showcase-body {
+    font-size: vars.$small;
+  }
+}

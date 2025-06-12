@@ -7,12 +7,12 @@ name  = "Research"
 
 # Your Publications
 
-\showcase{ref="pubs.toml", byyear=true}
+\showcase{"pubs.toml", byyear=true}
 
 # Your Talks
 
-\showcase{ref="talks.toml", byyear=true}
+\showcase{"talks.toml", byyear=true}
 
 # Your Posters
 
-\showcase{ref="posters.toml", byyear=true}
+\showcase{"posters.toml", byyear=true}

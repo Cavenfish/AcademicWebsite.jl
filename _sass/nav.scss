@@ -1,6 +1,8 @@
+@use "vars";
+
 .masthead {
   position: relative;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid vars.$tertiary-background;
 
   padding-left: 3%;
 
@@ -9,5 +11,35 @@
     height: 20%;
     text-align: left;
     padding: 1%;
+    display: inline-block;
+
+    ul {
+      padding-left: 0;
+      margin-top: 0;
+      margin-bottom: 0;
+
+      li {
+        display: inline-block;
+
+        a {
+          color: vars.$primary-foreground;
+          text-decoration: none;
+          font-size: 18px;
+          font-weight: bold;
+          display: inline-block;
+          padding-top: 10px;
+          padding-right: 2px;
+          padding-left: 2px;
+          padding-bottom: 5px;
+          margin-left: 7px;
+          margin-right: 7px;
+          transition: color 0.3s ease;
+        }
+      }
+    }
+
+    a {
+      text-decoration: none;
+    }
   }
 }

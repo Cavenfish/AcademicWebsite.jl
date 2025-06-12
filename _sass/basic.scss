@@ -6,38 +6,6 @@ body {
   overflow-x: hidden;
 }
 
-nav {
-  width: 64%;
-  display: inline-block;
-}
-
-nav ul {
-  padding-left: 0;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-nav li {
-  display: inline-block;
-}
-
-nav li a {
-  color: #004de6;
-  text-decoration: none;
-  font-size: 18px;
-  font-weight: bold;
-  display: inline-block;
-  float: center;
-  padding-top: 10px;
-  padding-right: 2px;
-  padding-left: 2px;
-  padding-bottom: 5px;
-  margin-left: 7px;
-  margin-right: 7px;
-  border-bottom: 2px solid #4c9cf1;
-  transition: color 0.3s ease;
-}
-
 header {
   text-align: right;
   margin-top: 50px;
@@ -96,7 +64,9 @@ header li a:hover {
 medium display: nav goes under name
 */
 @media (max-width: 760px) {
-  header { display: block; }
+  header {
+    display: block;
+  }
 
   header .blog-name {
     display: block;
@@ -151,8 +121,12 @@ instead, display a burger menu.
     padding: 0;
     margin: 0;
   }
-  header li a { border-bottom: none; }
-  header li a:hover { border-bottom: none; }
+  header li a {
+    border-bottom: none;
+  }
+  header li a:hover {
+    border-bottom: none;
+  }
 
   nav:hover ul {
     display: block;
