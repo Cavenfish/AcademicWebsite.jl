@@ -1,13 +1,11 @@
 .academic-sidebar {
   height: 100%;
   width: 15%;
-
   list-style: none;
   text-align: center;
   position: fixed;
-  
   padding-top: 5%;
-  padding-left: 2%;
+  padding-left: 5%;
 
   h3 {
     text-align: center;
@@ -22,7 +20,6 @@
     a {
       display: inline-block;
     }
-
   }
 
   .author_avatar {

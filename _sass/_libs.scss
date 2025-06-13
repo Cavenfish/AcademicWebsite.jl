@@ -1,0 +1,58 @@
+// Katex
+.katex {
+  font-size: 1em !important;
+}
+
+.katex-display {
+  .katex {
+    /* Overwrite KaTeX settings. */
+    display: inline-block;
+
+    /* Allow display equations to wrap on small screens. */
+    white-space: normal;
+  }
+
+  ::after {
+    counter-increment: eqnum;
+    content: "(" counter(eqnum) ")";
+    position: relative;
+    float: right;
+    padding-right: 5px;
+  }
+}
+
+.nonumber .katex-display::after {
+  counter-increment: nothing;
+  content: "";
+}
+
+// Code & Highlight.js
+
+code {
+  background-color: var(--block-background);
+  padding: 0.1em 0.2em;
+  border-radius: 2px;
+  font-size: var(--small);
+}
+
+.hljs {
+  font-size: var(--small);
+  line-height: 1.35em;
+  border-radius: 10px;
+}
+
+.hljs-meta {
+  font-weight: bold;
+}
+
+.hljs-meta.shell_ {
+  color: crimson;
+}
+.hljs-meta.prompt_ {
+  color: rgb(25, 179, 51);
+}
+
+.code-output {
+  background: var(--output-background);
+  border: 1px dashed #dbdbdb;
+}

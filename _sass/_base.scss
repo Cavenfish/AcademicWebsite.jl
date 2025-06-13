@@ -1,0 +1,189 @@
+@use "vars";
+
+@mixin headings {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @content;
+  }
+}
+
+body {
+  overflow-x: hidden;
+}
+
+html {
+  font-family: vars.$font-stack;
+  font-size: vars.$normal;
+  color: vars.$primary-foreground;
+}
+
+header {
+  text-align: right;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+
+  .blog-name {
+    width: 35%;
+    display: inline-block;
+    text-align: left;
+    font-size: 18px;
+    font-family: "Lucida Console", Monaco, monospace;
+    padding-top: 10px;
+
+    a {
+      color: #a6a2a0;
+      text-decoration: none;
+    }
+  }
+}
+
+.franklin-content {
+  width: 55%;
+  padding-left: 25%;
+  padding-right: 0;
+  line-height: 1.35em;
+
+  .row {
+    display: block;
+  }
+
+  .left {
+    float: left;
+    margin-right: 15px;
+  }
+
+  .right {
+    float: right;
+  }
+
+  .container img {
+    width: auto;
+    padding-left: 0;
+    border-radius: 10px;
+  }
+
+  .footnote {
+    position: relative;
+    top: -0.5em;
+    font-size: 70%;
+  }
+
+  .page-foot a {
+    text-decoration: none;
+    color: #a6a2a0;
+    text-decoration: underline;
+  }
+
+  .img-small {
+    img {
+      width: 50%;
+      text-align: center;
+      padding-left: 20%;
+    }
+  }
+
+  .colbox-blue {
+    background-color: #eef3f5;
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 0 10px 10px 0;
+    border-left: 5px solid #4c9cf1;
+  }
+
+  img {
+    width: 70%;
+    text-align: center;
+    padding-left: 10%;
+  }
+
+  h1 {
+    font-size: 24px;
+    padding-bottom: 0.5em;
+    border-bottom: 3px double lightgrey;
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+  }
+
+  h2 {
+    font-size: 22px;
+    padding-bottom: 0.3em;
+    border-bottom: 1px solid lightgrey;
+    margin-top: 2em;
+    margin-bottom: 1em;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  @include headings {
+    text-align: left;
+
+    a {
+      color: inherit;
+      :hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  table {
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    text-align: center;
+  }
+
+  th,
+  td {
+    font-size: var(--small);
+    padding: 10px;
+    border: 1px solid black;
+  }
+
+  blockquote {
+    background: var(--block-background);
+    border-left: 7px solid #a8a8a8;
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+    font-style: italic;
+
+    p {
+      display: inline;
+    }
+  }
+}
+
+.franklin-toc {
+  ol ol {
+    list-style-type: lower-alpha;
+  }
+
+  li {
+    /* Avoid clickable elements being too close together. */
+    margin: 0.6rem 0;
+  }
+}
+
+.page-foot {
+  font-size: 80%;
+  font-family: Arial, serif;
+  color: #a6a2a0;
+  text-align: center;
+  margin-top: 6em;
+  border-top: 1px solid lightgrey;
+  padding-top: 2em;
+  margin-bottom: 4em;
+  position: relative;
+}
