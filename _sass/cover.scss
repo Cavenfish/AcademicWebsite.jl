@@ -51,7 +51,7 @@ body {
 
     .title {
       text-align: left;
-      font-size: vars.$large;
+      font-size: vars.$large-font;
       font-weight: bold;
     }
   }
@@ -74,7 +74,7 @@ body {
 
       a {
         color: vars.$primary-foreground;
-        font-size: vars.$normal;
+        font-size: vars.$normal-font;
         text-decoration: none;
       }
     }

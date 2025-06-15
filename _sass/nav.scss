@@ -24,7 +24,7 @@
         a {
           color: vars.$primary-foreground;
           text-decoration: none;
-          font-size: 18px;
+          font-size: vars.$normal-font;
           font-weight: bold;
           display: inline-block;
           padding-top: 10px;

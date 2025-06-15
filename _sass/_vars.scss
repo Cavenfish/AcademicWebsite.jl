@@ -3,7 +3,7 @@ Variables to be used throughout site
 */
 
 // Background
-$primary-background: #a2e1e6;
+$primary-background: #ffffff;
 $secondary-background: #7dd4db;
 $tertiary-background: #4fb9c1;
 
@@ -14,8 +14,13 @@ $tertiary-foreground: #b85b74;
 
 // Font
 $font-stack: Helvetica, Arial, sans-serif;
-$large: 24px;
-$normal: 19px;
-$small: 14px;
+$xlarge-font: 24px;
+$large-font: 22px;
+$normal-font: 20px;
+$medium-font: 17px;
+$small-font: 14px;
 
 //Footer
+$footer-font-stack: Arial, serif;
+$footer-text-color: #a6a2a0;
+$footer-font-size: 16px;
