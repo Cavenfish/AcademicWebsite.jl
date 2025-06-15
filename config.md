@@ -13,9 +13,12 @@ mintoclevel = 2
 # Files to ignore
 
 ignore = [
+"_sass/",
 "node_modules/",
 "Manifest.toml",
-"Project.toml"
+"Project.toml",
+"package-lock.json",
+"package.json"
 ]
 
 # RSS
