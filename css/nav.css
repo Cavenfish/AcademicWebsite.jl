@@ -1,0 +1,40 @@
+/*
+Variables to be used throughout site
+*/
+.masthead {
+  position: relative;
+  border-bottom: 2px solid #4fb9c1;
+  padding-left: 3%;
+}
+.masthead nav {
+  width: 100%;
+  height: 20%;
+  text-align: left;
+  padding: 1%;
+  display: inline-block;
+}
+.masthead nav ul {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.masthead nav ul li {
+  display: inline-block;
+}
+.masthead nav ul li a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  display: inline-block;
+  padding-top: 10px;
+  padding-right: 2px;
+  padding-left: 2px;
+  padding-bottom: 5px;
+  margin-left: 7px;
+  margin-right: 7px;
+  transition: color 0.3s ease;
+}
+.masthead nav a {
+  text-decoration: none;
+}

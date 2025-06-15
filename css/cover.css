@@ -1,0 +1,89 @@
+/*
+Variables to be used throughout site
+*/
+@media (min-width: 940px) {
+  .franklin-content {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+body {
+  overflow: hidden;
+}
+
+.franklin-content {
+  padding: 0;
+  align-content: center;
+}
+
+.page-foot {
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.cover {
+  padding: 5%;
+  padding-bottom: 0;
+}
+.cover .cover-photo {
+  width: 40%;
+  text-align: right;
+  align-content: center;
+  float: left;
+  margin-left: 12.5%;
+}
+.cover .cover-photo img {
+  width: 100%;
+  align-self: center;
+  clip-path: circle();
+}
+.cover .cover-body {
+  height: 85%;
+  text-align: left;
+  align-content: center;
+  padding-left: 25px;
+  padding-right: 10%;
+  padding-top: 5%;
+  padding-bottom: 0;
+}
+.cover .cover-body .title {
+  text-align: left;
+  font-size: 22px;
+  font-weight: bold;
+}
+.cover .cover-nav {
+  width: 100%;
+  text-align: center;
+  align-content: center;
+  padding-top: 5%;
+}
+.cover .cover-nav .cover-button {
+  width: auto;
+  padding: 10px;
+  display: inline;
+  color: rgb(0, 0, 0);
+  background: #ffffff;
+  border-color: rgb(0, 0, 0);
+  border-width: 1px;
+  align-content: center;
+}
+.cover .cover-nav .cover-button a {
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  text-decoration: none;
+}
+.cover .cover-links {
+  width: 100%;
+  text-align: center;
+  align-content: center;
+  padding-top: 10px;
+}
+.cover .cover-links li {
+  list-style: none;
+  display: inline;
+  margin: 15px;
+}
+.cover .cover-links li a {
+  display: inline-block;
+}
