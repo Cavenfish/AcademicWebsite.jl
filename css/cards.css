@@ -30,3 +30,25 @@ Variables to be used throughout site
 .card .card-info .title {
   color: #9b4d5f;
 }
+
+@media (max-width: 480px) {
+  .card {
+    display: block;
+  }
+  .card .card-img {
+    width: 100%;
+    align-content: center;
+  }
+  .card .card-img img {
+    width: 95%;
+    margin: auto;
+  }
+  .card .card-info {
+    width: 100%;
+    text-align: center;
+    padding-left: 0;
+  }
+  .card .card-info h2 {
+    text-align: center;
+  }
+}

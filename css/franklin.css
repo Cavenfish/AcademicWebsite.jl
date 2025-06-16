@@ -185,6 +185,7 @@ code {
 /* On narrow device, reduce margins. */
 @media (max-width: 480px) {
   .franklin-content {
+    width: auto;
     padding-left: 6%;
     padding-right: 6%;
   }

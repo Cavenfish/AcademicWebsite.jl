@@ -1,13 +1,6 @@
 /*
 Variables to be used throughout site
 */
-@media (min-width: 940px) {
-  .franklin-content {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
 body {
   overflow: hidden;
 }
@@ -86,4 +79,27 @@ body {
 }
 .cover .cover-links li a {
   display: inline-block;
+}
+
+@media (max-width: 480px) {
+  .cover .cover-photo {
+    width: 80%;
+    float: none;
+    margin-left: 10%;
+    align-content: center;
+  }
+  .cover .cover-body {
+    text-align: center;
+  }
+  .cover .cover-body .title {
+    text-align: center;
+  }
+  .cover .cover-links ul {
+    padding-inline-start: 0;
+  }
+}
+@media (max-height: 500px) {
+  body {
+    overflow-x: auto;
+  }
 }

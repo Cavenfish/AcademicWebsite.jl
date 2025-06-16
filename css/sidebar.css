@@ -1,3 +1,6 @@
+/*
+Variables to be used throughout site
+*/
 .academic-sidebar {
   height: 100%;
   width: 15%;
@@ -22,4 +25,10 @@
 .academic-sidebar .author_avatar img {
   max-width: 175px;
   clip-path: circle();
+}
+
+@media (max-width: 480px) {
+  .academic-sidebar {
+    display: none;
+  }
 }
