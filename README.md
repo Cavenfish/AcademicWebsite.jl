@@ -19,3 +19,4 @@ The focus for this template is websites for academics, and it was heavily inspir
 - [ ] Add CV display/download
 - [ ] Add icons to team cards
 - [ ] Make documentation (ie. how to setup a personal page)
+- [ ] Refactor sass for better organization
