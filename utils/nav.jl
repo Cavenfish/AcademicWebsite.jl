@@ -1,9 +1,9 @@
 function hfun_navigation()
   io  = IOBuffer()
   dir = joinpath(ROOT, "pages")
-  inf = walkdir(dir)
+  inf = walkdir(dir) |> take!
 
-  isempty(i[3]) && return take!(io) |> String
+  isempty(inf[3]) && return take!(io) |> String
 
   for item in inf[3]
     page = split(item, ".")[1]
