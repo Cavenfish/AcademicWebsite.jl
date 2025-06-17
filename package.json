@@ -1,5 +1,9 @@
 {
   "devDependencies": {
     "sass": "^1.89.1"
+  },
+  "dependencies": {
+    "jdenticon": "^3.3.0",
+    "toml": "^3.0.0"
   }
 }
