@@ -4,6 +4,6 @@
   },
   "dependencies": {
     "jdenticon": "^3.3.0",
-    "toml": "^3.0.0"
+    "smol-toml": "^1.3.4"
   }
 }
