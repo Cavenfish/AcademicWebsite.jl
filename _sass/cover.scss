@@ -58,14 +58,13 @@ body {
       width: auto;
       padding: 10px;
       display: inline;
-      color: vars.$primary-foreground;
-      background: vars.$primary-background;
-      border-color: vars.$primary-foreground;
-      border-width: 1px;
+      color: vars.$secondary-foreground;
+      background: vars.$secondary-background;
+      border: none;
       align-content: center;
 
       a {
-        color: vars.$primary-foreground;
+        color: vars.$secondary-foreground;
         font-size: vars.$normal-font;
         text-decoration: none;
       }
