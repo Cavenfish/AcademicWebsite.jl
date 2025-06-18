@@ -1,0 +1,45 @@
+/*
+Variables to be used throughout site
+*/
+.software {
+  margin-top: 10px;
+  margin-bottom: 25px;
+  border: 2px solid #7dd4db;
+  border-radius: 20px;
+  display: block;
+}
+.software .title {
+  margin-left: 15px;
+  display: inline-block;
+}
+.software .title h1 {
+  color: #b85b74;
+  text-decoration: none;
+  padding-bottom: 0;
+  margin-bottom: 5px;
+}
+.software .blurb {
+  display: block;
+  margin-left: 30px;
+}
+.software .blurb p {
+  padding-top: 0;
+  padding-bottom: 5px;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+}
+.software .links {
+  display: inline-block;
+}
+.software .links ul {
+  padding: 0;
+  margin: 0;
+}
+.software .links ul li {
+  list-style: none;
+  display: inline;
+  margin: 15px;
+}
+.software .links ul li a {
+  display: inline-block;
+}

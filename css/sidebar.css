@@ -7,7 +7,7 @@ Variables to be used throughout site
   list-style: none;
   text-align: center;
   position: fixed;
-  padding-top: 5%;
+  padding-top: 30px;
   padding-left: 5%;
 }
 .academic-sidebar h3 {
@@ -24,7 +24,6 @@ Variables to be used throughout site
 }
 .academic-sidebar .author_avatar img {
   max-width: 175px;
-  clip-path: circle();
 }
 
 @media (max-width: 480px) {
