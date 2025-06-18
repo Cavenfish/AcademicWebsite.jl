@@ -1,10 +1,16 @@
 @use "vars";
 
 .software {
+  margin-top: 10px;
+  margin-bottom: 25px;
+  border: 2px solid vars.$secondary-background;
+  border-radius: 20px;
   display: block;
 
   .title {
+    margin-left: 15px;
     display: inline-block;
+
     h1 {
       color: vars.$tertiary-foreground;
       text-decoration: none;
@@ -15,7 +21,7 @@
 
   .blurb {
     display: block;
-    padding-left: 15px;
+    margin-left: 30px;
 
     p {
       padding-top: 0;
