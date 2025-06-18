@@ -61,14 +61,14 @@ body {
       width: auto;
       padding: 10px;
       display: inline;
-      color: vars.$secondary-foreground;
-      background: vars.$secondary-background;
+      color: vars.$primary-foreground;
+      background-color: vars.$primary-background;
       border: none;
       align-content: center;
 
       a {
-        color: vars.$secondary-foreground;
-        font-size: vars.$normal-font;
+        color: vars.$primary-foreground;
+        font-size: vars.$xlarge-font;
         text-decoration: none;
       }
     }
