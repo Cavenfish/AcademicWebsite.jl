@@ -23,3 +23,9 @@ The focus for this template is websites for academics, and it was heavily inspir
 - [ ] Make news feed
 - [ ] Add blog page to live-demo
 - [ ] Add hobbies page to live-demo
+- [x] Make nav function work with dirs too
+
+
+## Credits
+
+The example CV was taken from this Overleaf [template](https://www.overleaf.com/latex/templates/a-customised-curve-cv/mvmbhkwsnmwv).
