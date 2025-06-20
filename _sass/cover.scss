@@ -45,9 +45,22 @@ body {
     padding-bottom: 0;
 
     .title {
+      display: inline-block;
       text-align: left;
-      font-size: vars.$large-font;
+      font-size: vars.$xlarge-font;
       font-weight: bold;
+    }
+
+    .pronouns {
+      text-align: left;
+      display: inline-block;
+      font-size: vars.$medium-font;
+      margin-bottom: 5%;
+    }
+
+    .short-bio {
+      display: block;
+      margin-bottom: 10%;
     }
   }
 
@@ -55,7 +68,7 @@ body {
     width: 100%;
     text-align: center;
     align-content: center;
-    padding-top: 5%;
+    padding-top: 2%;
 
     .cover-button {
       width: auto;
