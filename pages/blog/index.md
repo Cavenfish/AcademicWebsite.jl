@@ -14,6 +14,8 @@ Why not write short blog (you don't have to call it a blog)
 posts sharing this knowledge with anyone that comes upon 
 your website.
 
-~~~
-<a href="/pages/blog/code_post">Code Post</a>
-~~~
+\post{
+    "A Post with Code",
+    "A post that shares something that uses code.",
+    "/pages/blog/code_post.md"
+}
