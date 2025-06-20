@@ -1,5 +1,5 @@
 <!--
-Add here global page variables to use throughout your website.
+Ignore this file if you are not developing.
 -->
 
 +++
