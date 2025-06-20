@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-   
+    <link rel="stylesheet" href="/Academic-Website/libs/highlight/styles/github.min.css">
+ 
 
 <link rel="stylesheet" href="/Academic-Website/css/franklin.css" />
 <link rel="stylesheet" href="/Academic-Website/css/icons.css" />
@@ -114,96 +115,36 @@
   
 <!-- Content appended here -->
 <div class="franklin-content">
-<h1 id="your_publications"><a href="#your_publications" class="header-anchor">Your Publications</a></h1>
-<div class="showcase">
-  <ul>
-</ul>
-<div class="year-heading">
-  <h2>2022</h2>
-</div>
-<ul>
-<li>
-  <div class="showcase-title">
-    <a href="talks/example">A Publication Title</a>
-  </div>
-  <div class="showcase-body">
-    Nelson Bighetti, Jane Doe
-    <br>
-    <i>
-      
-      Some Journal
-    </i>
-  </div>
-</li>
-<li>
-  <div class="showcase-title">
-    <a href="talks/example">A Publication Title</a>
-  </div>
-  <div class="showcase-body">
-    Nelson Bighetti, Jane Doe
-    <br>
-    <i>
-      
-      Some Journal
-    </i>
-  </div>
-</li>
-  </ul>
-</div>
+<h1 id="write_a_blog_post_with_code"><a href="#write_a_blog_post_with_code" class="header-anchor">Write a Blog Post with Code</a></h1>
+<p>Make an informative post on how to code a particular method, or simply write about some code you find useful.</p>
+<pre><code class="language-julia">function foo&#40;x::Float64, y::Float64&#41;
+  x^2 &#43; y^2
+end
 
-<h1 id="your_talks"><a href="#your_talks" class="header-anchor">Your Talks</a></h1>
-<div class="showcase">
-  <ul>
-</ul>
-<div class="year-heading">
-  <h2>2021</h2>
-</div>
-<ul>
-<li>
-  <div class="showcase-title">
-    <a href="talks/example">A Talk Title</a>
-  </div>
-  <div class="showcase-body">
-    Nelson Bighetti, Jane Doe
-    <br>
-    <i>
-      Some Conference, Some City, Some Country
-      
-    </i>
-  </div>
-</li>
-  </ul>
-</div>
+function bar&#40;z::Float64&#41;
+  z^2 &#43; 0.5z
+end
 
-<h1 id="your_posters"><a href="#your_posters" class="header-anchor">Your Posters</a></h1>
-<div class="showcase">
-  <ul>
-</ul>
-<div class="year-heading">
-  <h2>2021</h2>
-</div>
-<ul>
-<li>
-  <div class="showcase-title">
-    <a href="talks/example">A Poster Title</a>
-  </div>
-  <div class="showcase-body">
-    Nelson Bighetti, Jane Doe
-    <br>
-    <i>
-      Some Conference, Some City, Some Country
-      
-    </i>
-  </div>
-</li>
-  </ul>
-</div>
+# Pipes are nice
+foo&#40;5.0, 2.0&#41; |&gt; bar</code></pre>
+<p>Sytax highlight is available for many languages.</p>
+<pre><code class="language-python">def foo&#40;x, y&#41;:
+    return x**2 &#43; y**2
 
+def bar&#40;z&#41;:
+    return z**2 &#43; 0.5*z
+
+# No pipe 
+bar&#40;foo&#40;5.0, 2.0&#41;&#41;</code></pre>
 <div class="page-foot">
     Website built with <a href="https://franklinjl.org/">Franklin.jl</a>  
 </div>
 </div><!-- CONTENT ENDS HERE -->
     
+    
+        <script src="/Academic-Website/libs/highlight/highlight.min.js"></script>
+<script>hljs.highlightAll();hljs.configure({tabReplace: '    '});</script>
+
     
   </body>
 </html>

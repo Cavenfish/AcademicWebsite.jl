@@ -3,31 +3,55 @@
 
 <url>
     <loc>https://cavenfish.github.io/Academic-Website/pages/research/index.html</loc>
-    <lastmod>2025-06-18</lastmod>
+    <lastmod>2025-06-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
     <loc>https://cavenfish.github.io/Academic-Website/pages/people/index.html</loc>
-    <lastmod>2025-06-18</lastmod>
+    <lastmod>2025-06-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
     <loc>https://cavenfish.github.io/Academic-Website/pages/aboutMe/index.html</loc>
-    <lastmod>2025-06-18</lastmod>
+    <lastmod>2025-06-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
     <loc>https://cavenfish.github.io/Academic-Website/index.html</loc>
-    <lastmod>2025-06-18</lastmod>
+    <lastmod>2025-06-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
     <loc>https://cavenfish.github.io/Academic-Website/pages/software/index.html</loc>
-    <lastmod>2025-06-18</lastmod>
+    <lastmod>2025-06-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://cavenfish.github.io/Academic-Website/pages/blog/code_post/index.html</loc>
+    <lastmod>2025-06-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://cavenfish.github.io/Academic-Website/pages/hobbies/example/index.html</loc>
+    <lastmod>2025-06-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://cavenfish.github.io/Academic-Website/pages/hobbies/index.html</loc>
+    <lastmod>2025-06-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://cavenfish.github.io/Academic-Website/pages/blog/index.html</loc>
+    <lastmod>2025-06-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>

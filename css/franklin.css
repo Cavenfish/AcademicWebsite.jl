@@ -80,6 +80,7 @@ html {
 .franklin-content h5 a,
 .franklin-content h6 a {
   color: inherit;
+  text-decoration: none;
 }
 .franklin-content h1 a :hover,
 .franklin-content h2 a :hover,
