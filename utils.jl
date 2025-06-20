@@ -11,6 +11,9 @@ include("./utils/nav.jl")
 include("./utils/software.jl")
 include("./utils/posts.jl")
 
+hfun_author_name() = CONF["general"]["author"]
+hfun_author_bio() = CONF["general"]["my_bio"]
+
 @lx function br(; n=1)
   repeat("<br>", n)  |> html
 end
