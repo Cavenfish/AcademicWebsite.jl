@@ -113,6 +113,20 @@ html {
   display: inline;
 }
 
+.pronouns {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  align-content: center;
+  font-size: 17px;
+  color: #b85b74;
+}
+
+.short-bio {
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+}
+
 .page-foot {
   font-size: 16px;
   font-family: Arial, serif;

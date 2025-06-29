@@ -33,10 +33,14 @@
 
   
     <div class="masthead">
-    <nav>
-        <ul>
-        <li><a href="/Academic-Website/">Your Name Here</a></li>
-        <li>
+  <nav>
+    <div class="author-name-nav">
+      <li><a href="/Academic-Website/">Your Name Here</a></li>
+    </div>
+    <a class="burger-nav" onclick="myFunction()">
+      <i class="fa-2x fa fa-bars"></i>
+    </a>
+    <div class="desktop-nav"><li>
   <a href="/Academic-Website/pages/aboutMe">About Me</a>
 </li>
 
@@ -60,21 +64,54 @@
   <a href="/Academic-Website/pages/hobbies">Hobbies</a>
 </li>
 
-
-        </ul>
-    </nav>
 </div>
+    <div id="hidden" class="mobile-nav"><li>
+  <a href="/Academic-Website/pages/aboutMe">About Me</a>
+</li>
+
+<li>
+  <a href="/Academic-Website/pages/people">Group</a>
+</li>
+
+<li>
+  <a href="/Academic-Website/pages/research">Research</a>
+</li>
+
+<li>
+  <a href="/Academic-Website/pages/software">Software</a>
+</li>
+
+<li>
+  <a href="/Academic-Website/pages/blog">Blog</a>
+</li>
+
+<li>
+  <a href="/Academic-Website/pages/hobbies">Hobbies</a>
+</li>
+
+</div>
+  </nav>
+</div>
+
     <div class="academic-sidebar">
-    <div class="author_avatar">
-        <img src=/Academic-Website/assets/figs/me.png class="author_avatar" alt="Author Name">
-    </div>
+  <div class="author_avatar"><img 
+    src="/Academic-Website/assets/figs/me.png" 
+    class="author_avatar" 
+    alt="Your Name Here" 
+  /></div>
 
-    <h3>Your Name Here</h3>
+  <h3>Your Name Here</h3>
 
-    Your short bio here.
-    <br><br>
+  <!-- Pronouns are a class -->
+  <p class="pronouns"> 
+    (they/them)
+  </p>
 
-    <li>
+  <!-- Bio is just text -->
+  Your short bio here.
+  <br /><br />
+
+  <li>
   <a href="https://www.linkedin.com" target=_blank>
     <i class="fa fa-brands fa-linkedin" aria-hidden="true"></i>
   </a>
@@ -112,6 +149,7 @@
 </li>
 
 </div>
+
   
 <!-- Content appended here -->
 <div class="franklin-content">
@@ -146,5 +184,6 @@ bar&#40;foo&#40;5.0, 2.0&#41;&#41;</code></pre>
 <script>hljs.highlightAll();hljs.configure({tabReplace: '    '});</script>
 
     
+    <script src="/Academic-Website/assets/scripts/js/nav.js"></script>
   </body>
 </html>

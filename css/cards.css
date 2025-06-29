@@ -37,7 +37,7 @@ Variables to be used throughout site
   }
   .card .card-img {
     width: 100%;
-    align-content: center;
+    text-align: center;
   }
   .card .card-img img {
     width: 95%;
