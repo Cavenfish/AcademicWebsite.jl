@@ -77,13 +77,13 @@
       }
 
       .burger-nav {
-        display: inline-block;
-        justify-items: right;
+        display: block;
+        float: right;
       }
 
       .mobile-nav {
         display: none;
-        justify-items: right;
+        justify-items: left;
 
         li {
           display: block;
