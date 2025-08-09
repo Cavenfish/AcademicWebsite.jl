@@ -26,6 +26,7 @@ The focus for this template is websites for academics, and it was heavily inspir
 - [x] Make nav function work with dirs too
 - [x] Add optional pronouns field for names
 - [ ] Make it possible to update the template for existing sites
+- [ ] Add RSS for blog
 
 
 ## Credits
