@@ -1,7 +1,7 @@
 """
-initialize the user controled items.
+generate the website.
 """
-function init_site(topdir::String)
+function deploy(topdir::String; kwargs...)
 
   if topdir == "." || topdir == "./"
     topdir = pwd()
@@ -12,15 +12,10 @@ function init_site(topdir::String)
     topdir = joinpath(pwd(), topdir)
   end
 
-  if !isdir(topdir)
-    @info "Making new directory at:\n  $(topdir)"
-    mkdir(topdir)
-  end
+  template_dir = joinpath(@__DIR__, "template")
 
-  user_items_dir = joinpath(@__DIR__, "user_items")
-
-  for item in readdir(user_items_dir)
-    src = joinpath(user_items_dir, item)
+  for item in readdir(template_dir)
+    src = joinpath(template_dir, item)
     dst = joinpath(topdir, item)
     
     @info "Copying over item.\n  $(tmp)"
@@ -28,6 +23,7 @@ function init_site(topdir::String)
     cp(src, dst; force=true)
   end
 
-  joinpath(topdir, "pages") |> mkdir
-
+  joinpath(topdir, "_css") |> mkdir
+  cd(topdir)
+  optimize(;kwargs...)
 end
