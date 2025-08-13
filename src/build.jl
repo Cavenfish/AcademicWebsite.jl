@@ -1,7 +1,7 @@
 """
 generate the website.
 """
-function deploy(topdir::String; kwargs...)
+function build(topdir::String; kwargs...)
 
   if topdir == "." || topdir == "./"
     topdir = pwd()

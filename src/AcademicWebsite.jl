@@ -8,9 +8,9 @@ module AcademicWebsite
   using Franklin
 
   export init_site
-  export deploy
+  export build
 
   include("./init_site.jl")
-  include("./deploy.jl")
+  include("./build.jl")
 
 end
