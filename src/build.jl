@@ -18,11 +18,11 @@ function build(topdir::String; kwargs...)
     src = joinpath(template_dir, item)
     dst = joinpath(topdir, item)
     
-    @info "Copying over item.\n  $(tmp)"
+    @info "Copying over item.\n  $(item)"
 
     cp(src, dst; force=true)
   end
 
   joinpath(topdir, "_css") |> mkdir
-  
+
 end

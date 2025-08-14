@@ -23,7 +23,7 @@ function init_site(topdir::String)
     src = joinpath(user_items_dir, item)
     dst = joinpath(topdir, item)
     
-    @info "Copying over item.\n  $(tmp)"
+    @info "Copying over item.\n  $(item)"
 
     cp(src, dst; force=true)
   end
