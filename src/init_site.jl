@@ -28,6 +28,10 @@ function init_site(topdir::String)
     cp(src, dst; force=true)
   end
 
-  joinpath(topdir, "pages") |> mkdir
+  pages = joinpath(topdir, "pages")
+
+  if !isdir(pages)
+    mkdir(pages)
+  end
 
 end
