@@ -24,6 +24,5 @@ function build(topdir::String; kwargs...)
   end
 
   joinpath(topdir, "_css") |> mkdir
-  cd(topdir)
-  optimize(;kwargs...)
+  
 end
