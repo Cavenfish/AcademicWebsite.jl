@@ -3,14 +3,7 @@ initialize the user controled items.
 """
 function init_site(topdir::String)
 
-  if topdir == "." || topdir == "./"
-    topdir = pwd()
-  elseif topdir[1] == '.' && topdir[2] == '/'
-    tmp = replace(topdir, "./" => "")
-    topdir = joinpath(pwd(), tmp)
-  else
-    topdir = joinpath(pwd(), topdir)
-  end
+  topdir = prep_topdir(topdir)
 
   if !isdir(topdir)
     @info "Making new directory at:\n  $(topdir)"

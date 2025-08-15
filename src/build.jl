@@ -3,14 +3,7 @@ generate the website.
 """
 function build(topdir::String; kwargs...)
 
-  if topdir == "." || topdir == "./"
-    topdir = pwd()
-  elseif topdir[1] == '.' && topdir[2] == '/'
-    tmp = replace(topdir, "./" => "")
-    topdir = joinpath(pwd(), tmp)
-  else
-    topdir = joinpath(pwd(), topdir)
-  end
+  topdir = prep_topdir(topdir)
 
   template_dir = joinpath(@__DIR__, "template")
 
@@ -23,6 +16,10 @@ function build(topdir::String; kwargs...)
     cp(src, dst; force=true)
   end
 
-  joinpath(topdir, "_css") |> mkdir
+  css = joinpath(topdir, "_css")
+  
+  if !isdir(css)
+    mkdir(css)
+  end
 
 end
