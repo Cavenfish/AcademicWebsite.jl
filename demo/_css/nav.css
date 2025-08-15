@@ -1,0 +1,93 @@
+/*
+Variables to be used throughout site
+*/
+.masthead {
+  position: relative;
+  border-bottom: 2px solid #7dd4db;
+  padding-left: 6%;
+}
+.masthead nav {
+  width: 100%;
+  height: 20%;
+  text-align: left;
+  padding: 1%;
+  display: inline-block;
+}
+.masthead nav .author-name-nav {
+  display: inline-block;
+  padding-right: 50px;
+}
+.masthead nav .author-name-nav li {
+  display: inline-block;
+}
+.masthead nav .author-name-nav li a {
+  color: #9b4d5f;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  display: inline-block;
+  padding-top: 10px;
+  padding-right: 2px;
+  padding-left: 2px;
+  padding-bottom: 5px;
+  margin-left: 7px;
+  margin-right: 7px;
+  transition: color 0.3s ease;
+}
+.masthead nav .desktop-nav {
+  display: inline-block;
+}
+.masthead nav .desktop-nav li {
+  display: inline-block;
+}
+.masthead nav .desktop-nav li a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  display: inline-block;
+  padding-top: 10px;
+  padding-right: 2px;
+  padding-left: 2px;
+  padding-bottom: 5px;
+  margin-left: 7px;
+  margin-right: 7px;
+  transition: color 0.3s ease;
+}
+.masthead nav .mobile-nav {
+  display: none;
+}
+.masthead nav .burger-nav {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  .masthead nav .desktop-nav {
+    display: none;
+  }
+  .masthead nav .burger-nav {
+    display: block;
+    float: right;
+  }
+  .masthead nav .mobile-nav {
+    display: none;
+    justify-items: left;
+  }
+  .masthead nav .mobile-nav li {
+    display: block;
+  }
+  .masthead nav .mobile-nav li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    display: inline-block;
+    padding-top: 10px;
+    padding-right: 2px;
+    padding-left: 2px;
+    padding-bottom: 5px;
+    margin-left: 7px;
+    margin-right: 7px;
+    transition: color 0.3s ease;
+  }
+}

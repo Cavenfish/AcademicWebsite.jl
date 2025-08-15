@@ -1,0 +1,10 @@
+@use "vars";
+
+/* On narrow device, reduce margins. */
+@media (max-width: vars.$mobile-max-width) {
+  .franklin-content {
+    width: auto;
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+}

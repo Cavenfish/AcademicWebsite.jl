@@ -1,0 +1,160 @@
+@use "vars";
+
+@mixin headings {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @content;
+  }
+}
+
+body {
+  overflow-x: hidden;
+  background-color: vars.$primary-background;
+}
+
+html {
+  font-family: vars.$font-stack;
+  font-size: vars.$normal-font;
+  color: vars.$primary-foreground;
+}
+
+.franklin-content {
+  width: 55%;
+  padding-left: 25%;
+  padding-right: 0;
+  line-height: 1.35em;
+
+  .row {
+    display: block;
+  }
+
+  .left {
+    float: left;
+    margin-right: 15px;
+  }
+
+  .right {
+    float: right;
+  }
+
+  .container img {
+    width: auto;
+    padding-left: 0;
+    border-radius: 10px;
+  }
+
+  .footnote {
+    position: relative;
+    top: -0.5em;
+    font-size: 70%;
+  }
+
+  .img-small {
+    img {
+      width: 50%;
+      text-align: center;
+      padding-left: 20%;
+    }
+  }
+
+  img {
+    width: 70%;
+    text-align: center;
+    padding-left: 10%;
+  }
+
+  h1 {
+    font-size: vars.$xlarge-font;
+    padding-bottom: 0.5em;
+    border-bottom: none;
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+  }
+
+  h2 {
+    font-size: vars.$large-font;
+    padding-bottom: 0.3em;
+    border-bottom: none;
+    margin-top: 2em;
+    margin-bottom: 1em;
+  }
+
+  h3 {
+    font-size: vars.$normal-font;
+  }
+
+  @include headings {
+    text-align: left;
+
+    a {
+      color: inherit;
+      text-decoration: none;
+
+      :hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  table {
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    text-align: center;
+  }
+
+  th,
+  td {
+    font-size: var(--small);
+    padding: 10px;
+    border: 1px solid black;
+  }
+
+  blockquote {
+    background: var(--block-background);
+    border-left: 7px solid #a8a8a8;
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+    font-style: italic;
+
+    p {
+      display: inline;
+    }
+  }
+}
+
+.pronouns {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  align-content: center;
+  font-size: vars.$medium-font;
+  color: vars.$tertiary-foreground;
+}
+
+.short-bio {
+  font-size: vars.$normal-font;
+  color: vars.$primary-foreground;
+}
+
+.page-foot {
+  font-size: vars.$footer-font-size;
+  font-family: vars.$footer-font-stack;
+  color: vars.$footer-text-color;
+  text-align: center;
+  margin-top: 6em;
+  border-top: none;
+  padding-top: 2em;
+  margin-bottom: 4em;
+  position: relative;
+
+  a {
+    text-decoration: none;
+    color: vars.$footer-text-color;
+    text-decoration: underline;
+  }
+}

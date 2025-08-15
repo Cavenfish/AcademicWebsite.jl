@@ -1,0 +1,60 @@
+@use "vars";
+
+.card {
+  width: 100%;
+  height: 35%;
+  padding: 5px;
+  box-shadow: 0 0 8px 4px vars.$tertiary-background;
+  border: 2px solid vars.$primary-foreground;
+  display: flex;
+
+  .card-img {
+    width: 35%;
+    height: 100%;
+    padding: 0;
+    display: inline-block;
+
+    img {
+      padding: 0;
+      width: 100%;
+    }
+  }
+
+  .card-info {
+    width: 60%;
+    height: 100%;
+    padding-right: 0;
+    padding-left: 20px;
+    display: inline-block;
+    text-align: left;
+
+    .title {
+      color: vars.$secondary-foreground;
+    }
+  }
+}
+
+@media (max-width: vars.$mobile-max-width) {
+  .card {
+    display: block;
+
+    .card-img {
+      width: 100%;
+      text-align: center;
+
+      img {
+        width: 95%;
+        margin: auto;
+      }
+    }
+    .card-info {
+      width: 100%;
+      text-align: center;
+      padding-left: 0;
+
+      h2 {
+        text-align: center;
+      }
+    }
+  }
+}

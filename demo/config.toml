@@ -1,0 +1,41 @@
+[general]
+author = "Your Name Here"
+pronouns = "(they/them)"
+my_picture = "/assets/figs/me.png"
+my_bio = "Your short bio here."
+
+[links]
+scholar = [ "https://scholar.google.com", "fa fa-graduation-cap" ]
+github = [ "https://github.com", "fa fa-brands fa-github" ]
+orcid = [ "https://orcid.org", "fa fa-brands fa-orcid" ]
+linkedin = [ "https://www.linkedin.com", "fa fa-brands fa-linkedin" ]
+researchgate = [ "https://www.researchgate.net", "fa fa-brands fa-researchgate" ]
+bluesky = [ "https://bsky.app/", "fa fa-brands fa-bluesky" ]
+mastodon = [ "https://mastodon.social/explore", "fa fa-brands fa-mastodon" ]
+
+[team]
+order = [ "jane", "another", "more" ]
+
+[team.jane]
+alt = "Human"
+name = "A. Person"
+title = "Postdoc"
+bio = "A short bio here"
+email = "some.email@uni.edu"
+image = "/assets/figs/jane.png"
+
+[team.another]
+alt = "Human"
+name = "B. Person"
+title = "PhD Student"
+bio = "A short bio here"
+email = "some.email@uni.edu"
+image = "/assets/figs/another.png"
+
+[team.more]
+alt = "Human"
+name = "C. Person"
+title = "Undergraduate Student"
+bio = "A short bio here"
+email = "some.email@uni.edu"
+image = "/assets/figs/more.png"
