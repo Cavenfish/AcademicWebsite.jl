@@ -33,7 +33,8 @@ jobs:
           node ./utils/js/compile_sass.js
           node ./utils/js/generate_jdenticons.js
       - name: Build Franklin Site
-        shell: julia --project=demo {0}
+        working-directory: ./demo
+        shell: julia --project=./ {0}
         run: |
           using Pkg
           Pkg.instantiate()
