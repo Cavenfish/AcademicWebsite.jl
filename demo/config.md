@@ -18,6 +18,8 @@ ignore = [
 "package.json"
 ]
 
+prepath = "Academic-Website"
+
 # RSS
 
 generate_rss = true
