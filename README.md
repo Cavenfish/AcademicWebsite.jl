@@ -4,7 +4,7 @@ Please see the roadmap for an indication of how far along development is for the
 
 # Academic-Website
 
-This project aims to be a static site template for [Franklin.jl](https://github.com/tlienart/Franklin.jl), which hopefully can one day be added to [FranklinTemplates.jl](https://github.com/tlienart/FranklinTemplates.jl).
+This project aims to be a static site template for [Franklin.jl](https://github.com/tlienart/Franklin.jl), which hopefully can one day be added to [FranklinTemplates.jl](https://github.com/tlienart/FranklinTemplates.jl). The project will hopefully also become a package in the Julia general registry, so that existing websites using this template can easily update their sites as the template updates.
 
 The focus for this template is websites for academics, and it was heavily inspired by the [AcademicPages](https://github.com/academicpages/academicpages.github.io) template.
 
@@ -25,7 +25,7 @@ The focus for this template is websites for academics, and it was heavily inspir
 - [x] Add hobbies page to live-demo
 - [x] Make nav function work with dirs too
 - [x] Add optional pronouns field for names
-- [ ] Make it possible to update the template for existing sites
+- [x] Make it possible to update the template for existing sites
 - [ ] Add RSS for blog
 
 
