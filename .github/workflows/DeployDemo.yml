@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main
-      - makeIntoPackage # Delete this once ready to merge
   pull_request:
     branches:
       - main
