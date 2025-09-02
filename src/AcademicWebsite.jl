@@ -6,10 +6,10 @@ A static site template for academics.
 module AcademicWebsite
 
   export init_site
-  export build
+  export update_site
 
   include("./init_site.jl")
-  include("./build.jl")
+  include("./update.jl")
 
   function prep_topdir(topdir)
     if topdir == "." || topdir == "./"

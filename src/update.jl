@@ -1,7 +1,7 @@
 """
-generate the website.
+Update the template files.
 """
-function build(topdir::String; kwargs...)
+function update_site(topdir::String; kwargs...)
 
   topdir = prep_topdir(topdir)
 

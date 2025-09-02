@@ -1,5 +1,5 @@
 """
-initialize the user controled items.
+initialize the website template.
 """
 function init_site(topdir::String)
 
@@ -14,6 +14,18 @@ function init_site(topdir::String)
 
   for item in readdir(user_items_dir)
     src = joinpath(user_items_dir, item)
+    dst = joinpath(topdir, item)
+    
+    @info "Copying over item.\n  $(item)"
+
+    cp(src, dst; force=true)
+    chmod(dst, 0o644)
+  end
+
+  template_dir = joinpath(@__DIR__, "template")
+
+  for item in readdir(template_dir)
+    src = joinpath(template_dir, item)
     dst = joinpath(topdir, item)
     
     @info "Copying over item.\n  $(item)"
