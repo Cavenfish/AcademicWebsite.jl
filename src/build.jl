@@ -14,6 +14,7 @@ function build(topdir::String; kwargs...)
     @info "Copying over item.\n  $(item)"
 
     cp(src, dst; force=true)
+    chmod(dst, 0o644)
   end
 
   css = joinpath(topdir, "_css")
