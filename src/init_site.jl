@@ -19,7 +19,9 @@ function init_site(topdir::String)
     @info "Copying over item.\n  $(item)"
 
     cp(src, dst; force=true)
-    chmod(dst, 0o644)
+
+    #restore read/write for files
+    isfile(dst) && chmod(dst, 0o644)
   end
 
   template_dir = joinpath(@__DIR__, "template")
@@ -31,7 +33,9 @@ function init_site(topdir::String)
     @info "Copying over item.\n  $(item)"
 
     cp(src, dst; force=true)
-    chmod(dst, 0o644)
+
+    #restore read/write for files
+    isfile(dst) && chmod(dst, 0o644)
   end
 
   pages = joinpath(topdir, "pages")
