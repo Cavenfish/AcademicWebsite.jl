@@ -11,7 +11,7 @@ module AcademicWebsite
   include("./init_site.jl")
   include("./update.jl")
 
-  function prep_topdir(topdir)
+  function prep_topdir(topdir::String)
     if topdir == "." || topdir == "./"
       ret = pwd()
     elseif topdir[1] == '.' && topdir[2] == '/'
@@ -21,6 +21,12 @@ module AcademicWebsite
       ret = joinpath(pwd(), topdir)
     end
     ret
+  end
+
+  function restore_permissions(topdir::String)
+    for (root, dirs, files) in walkdir(topdir)
+      map(e -> chmod(joinpath(root, e), 0o644), files)
+    end
   end
 
 end
