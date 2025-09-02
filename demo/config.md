@@ -18,7 +18,7 @@ ignore = [
 "package.json"
 ]
 
-prepath = "Academic-Website"
+prepath = "AcademicWebsite.jl"
 
 # RSS
 
