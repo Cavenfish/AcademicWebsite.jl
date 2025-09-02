@@ -24,6 +24,11 @@ module AcademicWebsite
   end
 
   function restore_permissions(topdir::String)
+    if isfile(topdir)
+      chmod(topdir, 0o644)
+      return
+    end
+    
     for (root, dirs, files) in walkdir(topdir)
       map(e -> chmod(joinpath(root, e), 0o644), files)
     end
