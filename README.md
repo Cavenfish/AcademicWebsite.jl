@@ -99,6 +99,31 @@ might build-up in your site directory.
 **Warning**: This package is still not very stable so updating
 to furture version may cause your site to break.
 
+## Local Build
+**Requires npm and nodejs**
+
+After running the `init_site` function, if needed enter the 
+site directory, then run the following.
+
+```
+npm install
+mkdir _css
+node utils/js/compile_sass.js
+node utils/js/generate_jdenticons.js
+```
+
+After that you can serve the site with `Franklin`.
+
+```julia
+using Pkg
+Pkg.activate("./")
+Pkg.instantiate()
+
+using Franklin
+
+serve()
+```
+
 ## Roadmap
 
 - [x] Setup a live-demo
