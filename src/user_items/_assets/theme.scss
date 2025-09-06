@@ -1,7 +1,8 @@
 /*
-Variables to be used throughout site
-*/
+Set your websites theme here to override the default values.
 
+Variables to Override and their defaults
+-------------------
 // Background
 $primary-background: #ffffff !default;
 $secondary-background: #7dd4db !default;
@@ -27,5 +28,4 @@ $footer-font-size: 16px !default;
 
 // Screens
 $mobile-max-width: 480px !default;
-
-@import "../_assets/theme.scss";
+*/
