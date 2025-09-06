@@ -23,4 +23,5 @@ function update_site(topdir::String; kwargs...)
     mkdir(css)
   end
 
+  check_site_proj_file(topdir)
 end

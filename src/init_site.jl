@@ -40,4 +40,5 @@ function init_site(topdir::String)
     mkdir(pages)
   end
 
+  check_site_proj_file(topdir)
 end
