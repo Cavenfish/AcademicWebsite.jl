@@ -1,31 +1,7 @@
 /*
 Variables to be used throughout site
 */
-
-// Background
-$primary-background: #ffffff !default;
-$secondary-background: #7dd4db !default;
-$tertiary-background: #4fb9c1 !default;
-
-// Foreground
-$primary-foreground: #000000 !default;
-$secondary-foreground: #9b4d5f !default;
-$tertiary-foreground: #b85b74 !default;
-
-// Font
-$font-stack: Helvetica, Arial, sans-serif !default;
-$xlarge-font: 24px !default;
-$large-font: 22px !default;
-$normal-font: 20px !default;
-$medium-font: 17px !default;
-$small-font: 14px !default;
-
-// Footer
-$footer-font-stack: Arial, serif !default;
-$footer-text-color: #a6a2a0 !default;
-$footer-font-size: 16px !default;
+@use "../_assets/theme.scss";
 
 // Screens
 $mobile-max-width: 480px !default;
-
-@import "../_assets/theme.scss";
