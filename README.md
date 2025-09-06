@@ -91,7 +91,7 @@ update_site("./site/dir")
 ```
 
 This will only copy over template files, leaving your personal
-changes to files like `config.md` unchanged. This isn't a 
+changes to files like `config.toml` unchanged. This isn't a 
 perfect system, but it at least gives some amount of 
 ability to update an existing website. One main flaw is that
 updating does not delete stale files yet, so if unused files
