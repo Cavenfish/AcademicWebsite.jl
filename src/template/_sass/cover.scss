@@ -1,4 +1,5 @@
 @use "vars";
+@use "../_assets/theme" as theme;
 
 body {
   overflow: hidden;
@@ -47,14 +48,14 @@ body {
     .title {
       display: inline-block;
       text-align: left;
-      font-size: vars.$xlarge-font;
+      font-size: theme.$xlarge-font;
       font-weight: bold;
     }
 
     .pronouns {
       text-align: left;
       display: inline-block;
-      font-size: vars.$medium-font;
+      font-size: theme.$medium-font;
       margin-bottom: 5%;
     }
 
@@ -74,14 +75,14 @@ body {
       width: auto;
       padding: 10px;
       display: inline;
-      color: vars.$primary-foreground;
-      background-color: vars.$primary-background;
+      color: theme.$primary-foreground;
+      background-color: theme.$primary-background;
       border: none;
       align-content: center;
 
       a {
-        color: vars.$primary-foreground;
-        font-size: vars.$xlarge-font;
+        color: theme.$primary-foreground;
+        font-size: theme.$xlarge-font;
         text-decoration: none;
       }
     }

@@ -1,9 +1,10 @@
 @use "vars";
+@use "../_assets/theme" as theme;
 
 .software {
   margin-top: 10px;
   margin-bottom: 25px;
-  border: 2px solid vars.$secondary-background;
+  border: 2px solid theme.$secondary-background;
   border-radius: 20px;
   display: block;
 
@@ -12,7 +13,7 @@
     display: inline-block;
 
     h1 {
-      color: vars.$secondary-foreground;
+      color: theme.$secondary-foreground;
       text-decoration: none;
       padding-bottom: 0;
       margin-bottom: 5px;
@@ -26,8 +27,8 @@
     p {
       padding-top: 0;
       padding-bottom: 5px;
-      color: vars.$primary-foreground;
-      font-size: vars.$normal-font;
+      color: theme.$primary-foreground;
+      font-size: theme.$normal-font;
     }
   }
 

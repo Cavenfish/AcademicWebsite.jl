@@ -1,11 +1,12 @@
 @use "vars";
+@use "../_assets/theme" as theme;
 
 .card {
   width: 100%;
   height: 35%;
   padding: 5px;
-  box-shadow: 0 0 8px 4px vars.$tertiary-background;
-  border: 2px solid vars.$primary-foreground;
+  box-shadow: 0 0 8px 4px theme.$tertiary-background;
+  border: 2px solid theme.$primary-foreground;
   display: flex;
 
   .card-img {
@@ -29,7 +30,7 @@
     text-align: left;
 
     .title {
-      color: vars.$secondary-foreground;
+      color: theme.$secondary-foreground;
     }
   }
 }

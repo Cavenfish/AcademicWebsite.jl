@@ -1,8 +1,9 @@
 @use "vars";
+@use "../_assets/theme" as theme;
 
 .masthead {
   position: relative;
-  border-bottom: 2px solid vars.$secondary-background;
+  border-bottom: 2px solid theme.$secondary-background;
   padding-left: 6%;
 
   nav {
@@ -20,9 +21,9 @@
         display: inline-block;
 
         a {
-          color: vars.$secondary-foreground;
+          color: theme.$secondary-foreground;
           text-decoration: none;
-          font-size: vars.$normal-font;
+          font-size: theme.$normal-font;
           font-weight: bold;
           display: inline-block;
           padding-top: 10px;
@@ -43,9 +44,9 @@
         display: inline-block;
 
         a {
-          color: vars.$primary-foreground;
+          color: theme.$primary-foreground;
           text-decoration: none;
-          font-size: vars.$normal-font;
+          font-size: theme.$normal-font;
           font-weight: bold;
           display: inline-block;
           padding-top: 10px;
@@ -89,9 +90,9 @@
           display: block;
 
           a {
-            color: vars.$primary-foreground;
+            color: theme.$primary-foreground;
             text-decoration: none;
-            font-size: vars.$normal-font;
+            font-size: theme.$normal-font;
             font-weight: bold;
             display: inline-block;
             padding-top: 10px;

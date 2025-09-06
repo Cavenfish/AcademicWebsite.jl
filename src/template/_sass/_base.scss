@@ -1,4 +1,5 @@
 @use "vars";
+@use "../_assets/theme" as theme;
 
 @mixin headings {
   h1,
@@ -13,13 +14,13 @@
 
 body {
   overflow-x: hidden;
-  background-color: vars.$primary-background;
+  background-color: theme.$primary-background;
 }
 
 html {
-  font-family: vars.$font-stack;
-  font-size: vars.$normal-font;
-  color: vars.$primary-foreground;
+  font-family: theme.$font-stack;
+  font-size: theme.$normal-font;
+  color: theme.$primary-foreground;
 }
 
 .franklin-content {
@@ -68,7 +69,7 @@ html {
   }
 
   h1 {
-    font-size: vars.$xlarge-font;
+    font-size: theme.$xlarge-font;
     padding-bottom: 0.5em;
     border-bottom: none;
     margin-top: 1.5em;
@@ -76,7 +77,7 @@ html {
   }
 
   h2 {
-    font-size: vars.$large-font;
+    font-size: theme.$large-font;
     padding-bottom: 0.3em;
     border-bottom: none;
     margin-top: 2em;
@@ -84,7 +85,7 @@ html {
   }
 
   h3 {
-    font-size: vars.$normal-font;
+    font-size: theme.$normal-font;
   }
 
   @include headings {
@@ -132,19 +133,19 @@ html {
   margin: 0;
   text-align: center;
   align-content: center;
-  font-size: vars.$medium-font;
-  color: vars.$tertiary-foreground;
+  font-size: theme.$medium-font;
+  color: theme.$tertiary-foreground;
 }
 
 .short-bio {
-  font-size: vars.$normal-font;
-  color: vars.$primary-foreground;
+  font-size: theme.$normal-font;
+  color: theme.$primary-foreground;
 }
 
 .page-foot {
-  font-size: vars.$footer-font-size;
-  font-family: vars.$footer-font-stack;
-  color: vars.$footer-text-color;
+  font-size: theme.$footer-font-size;
+  font-family: theme.$footer-font-stack;
+  color: theme.$footer-text-color;
   text-align: center;
   margin-top: 6em;
   border-top: none;
@@ -154,7 +155,7 @@ html {
 
   a {
     text-decoration: none;
-    color: vars.$footer-text-color;
+    color: theme.$footer-text-color;
     text-decoration: underline;
   }
 }
