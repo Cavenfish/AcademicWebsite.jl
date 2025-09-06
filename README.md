@@ -28,8 +28,7 @@ If you use GitHub to deploy your website, you can use this
 GitHub action to compile the SASS and run some JS code before
 deploying your site. For the action below to work you need to
 make sure the directory you initialize you site in is in the 
-root of the GitHub repo. To deploy you also need to add 
-`Franklin` and `FranklinUtils` to the project. 
+root of the GitHub repo.
 
 ```yaml
 name: Deploy
