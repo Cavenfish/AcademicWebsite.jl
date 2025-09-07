@@ -52,6 +52,9 @@ module AcademicWebsite
       elseif !haskey(tom["deps"], "FranklinUtils")
         tom["deps"]["FranklinUtils"] = "dcd8a645-c81d-482f-af4b-568f72f3e16d"
       end
+      open(projFile, "w") do io
+          TOML.print(io, tom)
+      end
     else
       open(projFile, "w") do io
         print(
@@ -65,5 +68,5 @@ module AcademicWebsite
       end
     end
   end
-  
+
 end
