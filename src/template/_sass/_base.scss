@@ -14,13 +14,13 @@
 
 body {
   overflow-x: hidden;
-  background-color: theme.$primary-background;
+  background-color: var(--primary-bg);
 }
 
 html {
   font-family: theme.$font-stack;
   font-size: theme.$normal-font;
-  color: theme.$primary-foreground;
+  color: var(--primary-fg);
 }
 
 .franklin-content {
@@ -134,12 +134,12 @@ html {
   text-align: center;
   align-content: center;
   font-size: theme.$medium-font;
-  color: theme.$tertiary-foreground;
+  color: var(--tertiary-fg);
 }
 
 .short-bio {
   font-size: theme.$normal-font;
-  color: theme.$primary-foreground;
+  color: var(--primary-fg);
 }
 
 .page-foot {

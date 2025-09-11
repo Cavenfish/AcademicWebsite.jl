@@ -4,7 +4,7 @@
 .software {
   margin-top: 10px;
   margin-bottom: 25px;
-  border: 2px solid theme.$secondary-background;
+  border: 2px solid var(--secondary-bg);
   border-radius: 20px;
   display: block;
 
@@ -13,7 +13,7 @@
     display: inline-block;
 
     h1 {
-      color: theme.$secondary-foreground;
+      color: var(--secondary-fg);
       text-decoration: none;
       padding-bottom: 0;
       margin-bottom: 5px;
@@ -27,7 +27,7 @@
     p {
       padding-top: 0;
       padding-bottom: 5px;
-      color: theme.$primary-foreground;
+      color: var(--primary-fg);
       font-size: theme.$normal-font;
     }
   }

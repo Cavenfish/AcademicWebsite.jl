@@ -2,15 +2,24 @@
 Set your website theme here.
 */
 
-// Background
-$primary-background: #ffffff;
-$secondary-background: #7dd4db;
-$tertiary-background: #4fb9c1;
-
-// Foreground
-$primary-foreground: #000000;
-$secondary-foreground: #9b4d5f;
-$tertiary-foreground: #b85b74;
+$themes: (
+  "light": (
+    "primary-bg": #ffffff,
+    "secondary-bg": #7dd4db,
+    "tertiary-bg": #4fb9c1,
+    "primary-fg": #000000,
+    "secondary-fg": #9b4d5f,
+    "tertiary-fg": #b85b74,
+  ),
+  "dark": (
+    "primary-bg": #2e2c2c,
+    "secondary-bg": #10555a,
+    "tertiary-bg": #1c8991,
+    "primary-fg": #ffffff,
+    "secondary-fg": #e90e0e,
+    "tertiary-fg": #fd4c4c,
+  ),
+);
 
 // Font
 $font-stack: Helvetica, Arial, sans-serif;

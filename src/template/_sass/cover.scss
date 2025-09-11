@@ -68,13 +68,13 @@ body {
       width: auto;
       padding: 10px;
       display: inline;
-      color: theme.$primary-foreground;
-      background-color: theme.$primary-background;
+      color: var(--primary-fg);
+      background-color: var(--primary-bg);
       border: none;
       align-content: center;
 
       a {
-        color: theme.$primary-foreground;
+        color: var(--primary-fg);
         font-size: theme.$xlarge-font;
         text-decoration: none;
       }
@@ -91,13 +91,13 @@ body {
       width: auto;
       padding: 10px;
       display: inline;
-      color: theme.$primary-foreground;
-      background-color: theme.$primary-background;
+      color: var(--primary-fg);
+      background-color: var(--primary-bg);
       border: none;
       align-content: center;
 
       a {
-        color: theme.$primary-foreground;
+        color: var(--primary-fg);
         font-size: theme.$xlarge-font;
         text-decoration: none;
       }

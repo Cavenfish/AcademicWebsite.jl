@@ -5,8 +5,8 @@
   width: 100%;
   height: 35%;
   padding: 5px;
-  box-shadow: 0 0 8px 4px theme.$tertiary-background;
-  border: 2px solid theme.$primary-foreground;
+  box-shadow: 0 0 8px 4px var(--tertiary-bg);
+  border: 2px solid var(--primary-fg);
   display: flex;
 
   .card-img {
@@ -30,7 +30,7 @@
     text-align: left;
 
     .title {
-      color: theme.$secondary-foreground;
+      color: var(--secondary-fg);
     }
   }
 }

@@ -6,14 +6,14 @@
   height: 100%;
 
   .title {
-    color: theme.$secondary-foreground;
+    color: var(--secondary-fg);
 
     h1 {
       margin-bottom: 5px;
 
       a {
         text-decoration: none;
-        color: theme.$secondary-foreground;
+        color: var(--secondary-fg);
       }
     }
   }
@@ -25,7 +25,7 @@
       padding-top: 0;
       padding-bottom: 5px;
       margin-top: 5px;
-      color: theme.$primary-foreground;
+      color: var(--primary-fg);
       font-size: theme.$normal-font;
     }
   }

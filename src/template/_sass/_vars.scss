@@ -1,7 +1,15 @@
 /*
 Variables to be used throughout site
 */
-@use "../_assets/theme.scss";
+@use "../_assets/theme" as user_theme;
+
+@each $theme, $colors in user_theme.$themes {
+  [data-theme="#{$theme}"] {
+    @each $name, $color in $colors {
+      --#{$name}: #{$color};
+    }
+  }
+}
 
 // Screens
 $mobile-max-width: 480px !default;

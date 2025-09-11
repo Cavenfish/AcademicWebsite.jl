@@ -8,16 +8,16 @@
   .year-heading {
     h2 {
       border-bottom: none;
-      color: theme.$primary-foreground;
+      color: var(--primary-fg);
     }
   }
 
   .showcase-title {
-    color: theme.$secondary-foreground;
+    color: var(--secondary-fg);
 
     a {
       text-decoration: none;
-      color: theme.$secondary-foreground;
+      color: var(--secondary-fg);
     }
   }
 
