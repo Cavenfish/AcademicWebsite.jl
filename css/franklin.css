@@ -1,15 +1,36 @@
 /*
 Variables to be used throughout site
 */
+/*
+Set your website theme here.
+*/
+[data-theme=light] {
+  --primary-bg: #ffffff;
+  --secondary-bg: #7dd4db;
+  --tertiary-bg: #4fb9c1;
+  --primary-fg: #000000;
+  --secondary-fg: #9b4d5f;
+  --tertiary-fg: #b85b74;
+}
+
+[data-theme=dark] {
+  --primary-bg: #2e2c2c;
+  --secondary-bg: #10555a;
+  --tertiary-bg: #1c8991;
+  --primary-fg: #ffffff;
+  --secondary-fg: #e90e0e;
+  --tertiary-fg: #fd4c4c;
+}
+
 body {
   overflow-x: hidden;
-  background-color: #ffffff;
+  background-color: var(--primary-bg);
 }
 
 html {
   font-family: Helvetica, Arial, sans-serif;
   font-size: 20px;
-  color: rgb(0, 0, 0);
+  color: var(--primary-fg);
 }
 
 .franklin-content {
@@ -119,12 +140,12 @@ html {
   text-align: center;
   align-content: center;
   font-size: 17px;
-  color: #b85b74;
+  color: var(--tertiary-fg);
 }
 
 .short-bio {
   font-size: 20px;
-  color: rgb(0, 0, 0);
+  color: var(--primary-fg);
 }
 
 .page-foot {

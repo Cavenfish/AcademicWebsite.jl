@@ -1,9 +1,30 @@
 /*
 Variables to be used throughout site
 */
+/*
+Set your website theme here.
+*/
+[data-theme=light] {
+  --primary-bg: #ffffff;
+  --secondary-bg: #7dd4db;
+  --tertiary-bg: #4fb9c1;
+  --primary-fg: #000000;
+  --secondary-fg: #9b4d5f;
+  --tertiary-fg: #b85b74;
+}
+
+[data-theme=dark] {
+  --primary-bg: #2e2c2c;
+  --secondary-bg: #10555a;
+  --tertiary-bg: #1c8991;
+  --primary-fg: #ffffff;
+  --secondary-fg: #e90e0e;
+  --tertiary-fg: #fd4c4c;
+}
+
 .masthead {
   position: relative;
-  border-bottom: 2px solid #7dd4db;
+  border-bottom: 2px solid var(--secondary-bg);
   padding-left: 6%;
 }
 .masthead nav {
@@ -21,7 +42,7 @@ Variables to be used throughout site
   display: inline-block;
 }
 .masthead nav .author-name-nav li a {
-  color: #9b4d5f;
+  color: var(--secondary-fg);
   text-decoration: none;
   font-size: 20px;
   font-weight: bold;
@@ -41,7 +62,7 @@ Variables to be used throughout site
   display: inline-block;
 }
 .masthead nav .desktop-nav li a {
-  color: rgb(0, 0, 0);
+  color: var(--primary-fg);
   text-decoration: none;
   font-size: 20px;
   font-weight: bold;
@@ -53,6 +74,23 @@ Variables to be used throughout site
   margin-left: 7px;
   margin-right: 7px;
   transition: color 0.3s ease;
+}
+.masthead nav .theme-switch {
+  margin-left: auto;
+  margin-right: 1rem;
+  display: block;
+  float: right;
+}
+.masthead nav .theme-switch .theme-toggle {
+  background: none;
+  border: none;
+  color: var(--text-color);
+  cursor: pointer;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+}
+.masthead nav .theme-switch .theme-toggle .hover {
+  opacity: 0.8;
 }
 .masthead nav .mobile-nav {
   display: none;
@@ -77,7 +115,7 @@ Variables to be used throughout site
     display: block;
   }
   .masthead nav .mobile-nav li a {
-    color: rgb(0, 0, 0);
+    color: var(--primary-fg);
     text-decoration: none;
     font-size: 20px;
     font-weight: bold;

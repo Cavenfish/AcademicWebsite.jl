@@ -1,14 +1,14 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
    
 
-<link rel="stylesheet" href="/AcademicWebsite.jl/css/franklin.css" />
-<link rel="stylesheet" href="/AcademicWebsite.jl/css/icons.css" />
-<link rel="icon" href="/AcademicWebsite.jl/assets/rndimg.jpg" />
+<link rel="stylesheet" href="/css/franklin.css" />
+<link rel="stylesheet" href="/css/icons.css" />
+<link rel="icon" href="/assets/rndimg.jpg" />
 
 <!-- Font Awesome Icons -->
 <link
@@ -17,13 +17,12 @@
 />
 
 
-<link rel="stylesheet" href="/AcademicWebsite.jl/css/nav.css" />
-<link rel="stylesheet" href="/AcademicWebsite.jl/css/sidebar.css" />
-<link rel="stylesheet" href="/AcademicWebsite.jl/css/cards.css" />
-<link rel="stylesheet" href="/AcademicWebsite.jl/css/showcase.css" />
-<link rel="stylesheet" href="/AcademicWebsite.jl/css/software.css" />
-<link rel="stylesheet" href="/AcademicWebsite.jl/css/posts.css" />
-
+<link rel="stylesheet" href="/css/nav.css" />
+<link rel="stylesheet" href="/css/sidebar.css" />
+<link rel="stylesheet" href="/css/cards.css" />
+<link rel="stylesheet" href="/css/showcase.css" />
+<link rel="stylesheet" href="/css/software.css" />
+<link rel="stylesheet" href="/css/posts.css" />
 
   
    <title>Your Title</title>  
@@ -34,58 +33,63 @@
     <div class="masthead">
   <nav>
     <div class="author-name-nav">
-      <li><a href="/AcademicWebsite.jl/">Your Name Here</a></li>
+      <li><a href="/">Your Name Here</a></li>
+    </div>
+    <div class="theme-switch">
+      <button id="theme-toggle" onclick="toggleTheme()">
+        <i class="fas fa-moon"></i>
+      </button>
     </div>
     <a class="burger-nav" onclick="myFunction()">
       <i class="fa-2x fa fa-bars"></i>
     </a>
     <div class="desktop-nav"><li>
-  <a href="/AcademicWebsite.jl/pages/aboutMe">About Me</a>
+  <a href="/pages/aboutMe">About Me</a>
 </li>
 
 <li>
-  <a href="/AcademicWebsite.jl/pages/people">Group</a>
+  <a href="/pages/people">Group</a>
 </li>
 
 <li>
-  <a href="/AcademicWebsite.jl/pages/research">Research</a>
+  <a href="/pages/research">Research</a>
 </li>
 
 <li>
-  <a href="/AcademicWebsite.jl/pages/software">Software</a>
+  <a href="/pages/software">Software</a>
 </li>
 
 <li>
-  <a href="/AcademicWebsite.jl/pages/blog">Blog</a>
+  <a href="/pages/blog">Blog</a>
 </li>
 
 <li>
-  <a href="/AcademicWebsite.jl/pages/hobbies">Hobbies</a>
+  <a href="/pages/hobbies">Hobbies</a>
 </li>
 
 </div>
     <div id="hidden" class="mobile-nav"><li>
-  <a href="/AcademicWebsite.jl/pages/aboutMe">About Me</a>
+  <a href="/pages/aboutMe">About Me</a>
 </li>
 
 <li>
-  <a href="/AcademicWebsite.jl/pages/people">Group</a>
+  <a href="/pages/people">Group</a>
 </li>
 
 <li>
-  <a href="/AcademicWebsite.jl/pages/research">Research</a>
+  <a href="/pages/research">Research</a>
 </li>
 
 <li>
-  <a href="/AcademicWebsite.jl/pages/software">Software</a>
+  <a href="/pages/software">Software</a>
 </li>
 
 <li>
-  <a href="/AcademicWebsite.jl/pages/blog">Blog</a>
+  <a href="/pages/blog">Blog</a>
 </li>
 
 <li>
-  <a href="/AcademicWebsite.jl/pages/hobbies">Hobbies</a>
+  <a href="/pages/hobbies">Hobbies</a>
 </li>
 
 </div>
@@ -94,7 +98,7 @@
 
     <div class="academic-sidebar">
   <div class="author_avatar"><img 
-    src="/AcademicWebsite.jl/assets/figs/me.png" 
+    src="/assets/figs/me.png" 
     class="author_avatar" 
     alt="Your Name Here" 
   /></div>
@@ -171,7 +175,7 @@
   <br>
 
   <div style="margin-bottom: 300px; font-size: 24px">
-    <a href="/AcademicWebsite.jl/">Click here</a> to go back to the homepage.
+    <a href="/">Click here</a> to go back to the homepage.
   </div>
 
 </div>
@@ -182,6 +186,7 @@
 </div><!-- CONTENT ENDS HERE -->
     
     
-    <script src="/AcademicWebsite.jl/assets/scripts/js/nav.js"></script>
+    <script src="/libs/buttons/nav.js"></script>
+    <script src="/libs/buttons/theme.js"></script>
   </body>
 </html>

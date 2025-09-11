@@ -1,14 +1,14 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
    
 
-<link rel="stylesheet" href="/AcademicWebsite.jl/css/franklin.css" />
-<link rel="stylesheet" href="/AcademicWebsite.jl/css/icons.css" />
-<link rel="icon" href="/AcademicWebsite.jl/assets/rndimg.jpg" />
+<link rel="stylesheet" href="/css/franklin.css" />
+<link rel="stylesheet" href="/css/icons.css" />
+<link rel="icon" href="/assets/rndimg.jpg" />
 
 <!-- Font Awesome Icons -->
 <link
@@ -17,8 +17,14 @@
 />
 
 
-<link rel="stylesheet" href="/AcademicWebsite.jl/css/cover.css" />
+<link rel="stylesheet" href="/css/cover.css" />
 
+<link rel="stylesheet" href="/css/nav.css" />
+<link rel="stylesheet" href="/css/sidebar.css" />
+<link rel="stylesheet" href="/css/cards.css" />
+<link rel="stylesheet" href="/css/showcase.css" />
+<link rel="stylesheet" href="/css/software.css" />
+<link rel="stylesheet" href="/css/posts.css" />
 
   
    <title>Your Title</title>  
@@ -26,8 +32,74 @@
 <body>
 
   
-     <div class="cover">
-  <div class="cover-photo"><img src="/AcademicWebsite.jl/assets/figs/me.png" alt="Your Name Here"></div>
+     <div class="masthead">
+  <nav>
+    <div class="author-name-nav">
+      <li><a href="/">Your Name Here</a></li>
+    </div>
+    <div class="theme-switch">
+      <button id="theme-toggle" onclick="toggleTheme()">
+        <i class="fas fa-moon"></i>
+      </button>
+    </div>
+    <a class="burger-nav" onclick="myFunction()">
+      <i class="fa-2x fa fa-bars"></i>
+    </a>
+    <div class="desktop-nav"><li>
+  <a href="/pages/aboutMe">About Me</a>
+</li>
+
+<li>
+  <a href="/pages/people">Group</a>
+</li>
+
+<li>
+  <a href="/pages/research">Research</a>
+</li>
+
+<li>
+  <a href="/pages/software">Software</a>
+</li>
+
+<li>
+  <a href="/pages/blog">Blog</a>
+</li>
+
+<li>
+  <a href="/pages/hobbies">Hobbies</a>
+</li>
+
+</div>
+    <div id="hidden" class="mobile-nav"><li>
+  <a href="/pages/aboutMe">About Me</a>
+</li>
+
+<li>
+  <a href="/pages/people">Group</a>
+</li>
+
+<li>
+  <a href="/pages/research">Research</a>
+</li>
+
+<li>
+  <a href="/pages/software">Software</a>
+</li>
+
+<li>
+  <a href="/pages/blog">Blog</a>
+</li>
+
+<li>
+  <a href="/pages/hobbies">Hobbies</a>
+</li>
+
+</div>
+  </nav>
+</div>
+
+<div class="cover">
+  <div class="cover-photo"><img src="/assets/figs/me.png" alt="Your Name Here"></div>
 
   <div class="cover-body">
     <p class="title">Your Name Here</p>
@@ -41,17 +113,11 @@
     <p class="short-bio"> 
     Your short bio here.
   </p>
-  </div>
 
-  <div class="cover-nav">
     <button class="cover-button">
-      <a href="/AcademicWebsite.jl/pages/aboutMe">About Me</a>
-    </button>
-    <button class="cover-button">
-      <a href="/AcademicWebsite.jl/assets/items/cv.pdf">CV</a>
+      <a href="/assets/items/cv.pdf">CV</a>
     </button>
   </div>
-
   <div class="cover-links"><ul><li>
 <a href="https://www.linkedin.com" target=_blank>
   <i class="fa fa-brands fa-linkedin fa-2x" aria-hidden="true"></i>
@@ -81,8 +147,7 @@
   <i class="fa fa-brands fa-bluesky fa-2x" aria-hidden="true"></i>
 </a></li>
 </ul></div>
-</div>
- 
+</div> 
 
   
 <!-- Content appended here -->
@@ -93,6 +158,7 @@
 </div><!-- CONTENT ENDS HERE -->
     
     
-    <script src="/AcademicWebsite.jl/assets/scripts/js/nav.js"></script>
+    <script src="/libs/buttons/nav.js"></script>
+    <script src="/libs/buttons/theme.js"></script>
   </body>
 </html>

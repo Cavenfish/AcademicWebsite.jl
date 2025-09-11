@@ -1,10 +1,31 @@
 /*
 Variables to be used throughout site
 */
+/*
+Set your website theme here.
+*/
+[data-theme=light] {
+  --primary-bg: #ffffff;
+  --secondary-bg: #7dd4db;
+  --tertiary-bg: #4fb9c1;
+  --primary-fg: #000000;
+  --secondary-fg: #9b4d5f;
+  --tertiary-fg: #b85b74;
+}
+
+[data-theme=dark] {
+  --primary-bg: #2e2c2c;
+  --secondary-bg: #10555a;
+  --tertiary-bg: #1c8991;
+  --primary-fg: #ffffff;
+  --secondary-fg: #e90e0e;
+  --tertiary-fg: #fd4c4c;
+}
+
 .software {
   margin-top: 10px;
   margin-bottom: 25px;
-  border: 2px solid #7dd4db;
+  border: 2px solid var(--secondary-bg);
   border-radius: 20px;
   display: block;
 }
@@ -13,7 +34,7 @@ Variables to be used throughout site
   display: inline-block;
 }
 .software .title h1 {
-  color: #9b4d5f;
+  color: var(--secondary-fg);
   text-decoration: none;
   padding-bottom: 0;
   margin-bottom: 5px;
@@ -25,7 +46,7 @@ Variables to be used throughout site
 .software .blurb p {
   padding-top: 0;
   padding-bottom: 5px;
-  color: rgb(0, 0, 0);
+  color: var(--primary-fg);
   font-size: 20px;
 }
 .software .links {

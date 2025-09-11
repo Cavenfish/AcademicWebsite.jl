@@ -1,6 +1,27 @@
 /*
 Variables to be used throughout site
 */
+/*
+Set your website theme here.
+*/
+[data-theme=light] {
+  --primary-bg: #ffffff;
+  --secondary-bg: #7dd4db;
+  --tertiary-bg: #4fb9c1;
+  --primary-fg: #000000;
+  --secondary-fg: #9b4d5f;
+  --tertiary-fg: #b85b74;
+}
+
+[data-theme=dark] {
+  --primary-bg: #2e2c2c;
+  --secondary-bg: #10555a;
+  --tertiary-bg: #1c8991;
+  --primary-fg: #ffffff;
+  --secondary-fg: #e90e0e;
+  --tertiary-fg: #fd4c4c;
+}
+
 .academic-sidebar {
   height: 100%;
   width: 15%;

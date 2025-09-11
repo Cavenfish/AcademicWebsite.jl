@@ -1,0 +1,35 @@
+/*
+Set your website theme here.
+*/
+
+$themes: (
+  "light": (
+    "primary-bg": #ffffff,
+    "secondary-bg": #7dd4db,
+    "tertiary-bg": #4fb9c1,
+    "primary-fg": #000000,
+    "secondary-fg": #9b4d5f,
+    "tertiary-fg": #b85b74,
+  ),
+  "dark": (
+    "primary-bg": #2e2c2c,
+    "secondary-bg": #10555a,
+    "tertiary-bg": #1c8991,
+    "primary-fg": #ffffff,
+    "secondary-fg": #e90e0e,
+    "tertiary-fg": #fd4c4c,
+  ),
+);
+
+// Font
+$font-stack: Helvetica, Arial, sans-serif;
+$xlarge-font: 24px;
+$large-font: 22px;
+$normal-font: 20px;
+$medium-font: 17px;
+$small-font: 14px;
+
+// Footer
+$footer-font-stack: Arial, serif;
+$footer-text-color: #a6a2a0;
+$footer-font-size: 16px;
