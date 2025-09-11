@@ -63,6 +63,22 @@ body {
       display: block;
       margin-bottom: 10%;
     }
+
+    .cover-button {
+      width: auto;
+      padding: 10px;
+      display: inline;
+      color: theme.$primary-foreground;
+      background-color: theme.$primary-background;
+      border: none;
+      align-content: center;
+
+      a {
+        color: theme.$primary-foreground;
+        font-size: theme.$xlarge-font;
+        text-decoration: none;
+      }
+    }
   }
 
   .cover-nav {
