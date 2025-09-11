@@ -41,7 +41,7 @@ function main() {
   const file = fs.readFileSync("./config.toml", "utf8");
   const data = toml.parse(file);
 
-  if (data.hasOwnPropery("team")) {
+  if (Object.hasOwn(data, "team")) {
     const miss = find_missing_pics(data.team);
 
     miss.map(generate_jdenticons);
