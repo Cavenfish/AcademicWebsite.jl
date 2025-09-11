@@ -1,4 +1,5 @@
 @use "vars";
+@use "../_assets/theme" as theme;
 
 body {
   overflow: hidden;
@@ -47,20 +48,36 @@ body {
     .title {
       display: inline-block;
       text-align: left;
-      font-size: vars.$xlarge-font;
+      font-size: theme.$xlarge-font;
       font-weight: bold;
     }
 
     .pronouns {
       text-align: left;
       display: inline-block;
-      font-size: vars.$medium-font;
+      font-size: theme.$medium-font;
       margin-bottom: 5%;
     }
 
     .short-bio {
       display: block;
       margin-bottom: 10%;
+    }
+
+    .cover-button {
+      width: auto;
+      padding: 10px;
+      display: inline;
+      color: var(--primary-fg);
+      background-color: var(--primary-bg);
+      border: none;
+      align-content: center;
+
+      a {
+        color: var(--primary-fg);
+        font-size: theme.$xlarge-font;
+        text-decoration: none;
+      }
     }
   }
 
@@ -74,14 +91,14 @@ body {
       width: auto;
       padding: 10px;
       display: inline;
-      color: vars.$primary-foreground;
-      background-color: vars.$primary-background;
+      color: var(--primary-fg);
+      background-color: var(--primary-bg);
       border: none;
       align-content: center;
 
       a {
-        color: vars.$primary-foreground;
-        font-size: vars.$xlarge-font;
+        color: var(--primary-fg);
+        font-size: theme.$xlarge-font;
         text-decoration: none;
       }
     }

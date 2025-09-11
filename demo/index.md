@@ -1,6 +1,6 @@
 +++
 
 cover = true
-style = "default"
+style = "default_with_nav"
 
 +++

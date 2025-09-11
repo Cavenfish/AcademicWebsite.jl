@@ -1,29 +1,15 @@
 /*
 Variables to be used throughout site
 */
+@use "../_assets/theme" as user_theme;
 
-// Background
-$primary-background: #ffffff;
-$secondary-background: #7dd4db;
-$tertiary-background: #4fb9c1;
-
-// Foreground
-$primary-foreground: rgb(0, 0, 0);
-$secondary-foreground: #9b4d5f;
-$tertiary-foreground: #b85b74;
-
-// Font
-$font-stack: Helvetica, Arial, sans-serif;
-$xlarge-font: 24px;
-$large-font: 22px;
-$normal-font: 20px;
-$medium-font: 17px;
-$small-font: 14px;
-
-// Footer
-$footer-font-stack: Arial, serif;
-$footer-text-color: #a6a2a0;
-$footer-font-size: 16px;
+@each $theme, $colors in user_theme.$themes {
+  [data-theme="#{$theme}"] {
+    @each $name, $color in $colors {
+      --#{$name}: #{$color};
+    }
+  }
+}
 
 // Screens
-$mobile-max-width: 480px;
+$mobile-max-width: 480px !default;

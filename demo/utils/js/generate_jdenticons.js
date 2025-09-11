@@ -40,11 +40,14 @@ function fill_toml(data, names) {
 function main() {
   const file = fs.readFileSync("./config.toml", "utf8");
   const data = toml.parse(file);
-  const miss = find_missing_pics(data.team);
 
-  miss.map(generate_jdenticons);
+  if (data.hasOwnPropery("team")) {
+    const miss = find_missing_pics(data.team);
 
-  fill_toml(data, miss);
+    miss.map(generate_jdenticons);
+
+    fill_toml(data, miss);
+  }
 }
 
 main();

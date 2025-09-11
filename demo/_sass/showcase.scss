@@ -1,4 +1,5 @@
 @use "vars";
+@use "../_assets/theme" as theme;
 
 .showcase {
   width: 100%;
@@ -7,16 +8,16 @@
   .year-heading {
     h2 {
       border-bottom: none;
-      color: vars.$primary-foreground;
+      color: var(--primary-fg);
     }
   }
 
   .showcase-title {
-    color: vars.$secondary-foreground;
+    color: var(--secondary-fg);
 
     a {
       text-decoration: none;
-      color: vars.$secondary-foreground;
+      color: var(--secondary-fg);
     }
   }
 
@@ -25,6 +26,6 @@
   }
 
   .showcase-body {
-    font-size: vars.$small-font;
+    font-size: theme.$small-font;
   }
 }
