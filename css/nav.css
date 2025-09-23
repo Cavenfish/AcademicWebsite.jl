@@ -78,18 +78,11 @@ Set your website theme here.
 .masthead nav .theme-switch {
   margin-left: auto;
   margin-right: 1rem;
+  margin-top: 5px;
   display: block;
   float: right;
 }
-.masthead nav .theme-switch .theme-toggle {
-  background: none;
-  border: none;
-  color: var(--text-color);
-  cursor: pointer;
-  font-size: 1.2rem;
-  padding: 0.5rem;
-}
-.masthead nav .theme-switch .theme-toggle .hover {
+.masthead nav .theme-switch .hover {
   opacity: 0.8;
 }
 .masthead nav .mobile-nav {
@@ -105,7 +98,7 @@ Set your website theme here.
   }
   .masthead nav .burger-nav {
     display: block;
-    float: right;
+    float: left;
   }
   .masthead nav .mobile-nav {
     display: none;

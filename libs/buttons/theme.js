@@ -1,8 +1,7 @@
 function toggleTheme() {
   const html = document.documentElement;
-  const themeToggle = document.getElementById("theme-toggle");
+  const icon = document.getElementById("theme-icon");
   const currentTheme = html.getAttribute("data-theme");
-  const icon = themeToggle.querySelector("i");
 
   if (currentTheme === "dark") {
     html.setAttribute("data-theme", "light");
@@ -19,8 +18,7 @@ function toggleTheme() {
 document.addEventListener("DOMContentLoaded", () => {
   const savedTheme = localStorage.getItem("theme");
   const html = document.documentElement;
-  const themeToggle = document.getElementById("theme-toggle");
-  const icon = themeToggle.querySelector("i");
+  const icon = document.getElementById("theme-icon");
 
   if (savedTheme === "dark") {
     html.setAttribute("data-theme", "dark");
