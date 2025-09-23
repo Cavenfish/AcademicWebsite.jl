@@ -1,7 +1,3 @@
-<!--
-Ignore this file if you are not developing.
--->
-
 +++
 cover = false
 mintoclevel = 2
