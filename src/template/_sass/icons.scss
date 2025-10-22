@@ -2,19 +2,33 @@
     Icons 
 -----------*/
 
-/* Software Docs */
-.fa-book {
-  color: black;
+[data-theme="light"] {
+  /* Software Docs */
+  .fa-book {
+    color: black;
+  }
+
+  /* GitHub */
+  .fa-brands.fa-github {
+    color: black;
+  }
+}
+
+[data-theme="dark"] {
+  /* Software Docs */
+  .fa-book {
+    color: white;
+  }
+
+  /* GitHub */
+  .fa-brands.fa-github {
+    color: white;
+  }
 }
 
 /* Google Scholar */
 .fa-graduation-cap {
   color: #4c9cf1;
-}
-
-/* GitHub */
-.fa-brands.fa-github {
-  color: black;
 }
 
 /* ORCID */
