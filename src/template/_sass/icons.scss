@@ -12,6 +12,11 @@
   .fa-brands.fa-github {
     color: black;
   }
+
+  /* Email */
+  .fa-solid.fa-envelope {
+    color: black;
+  }
 }
 
 [data-theme="dark"] {
@@ -22,6 +27,11 @@
 
   /* GitHub */
   .fa-brands.fa-github {
+    color: white;
+  }
+
+  /* Email */
+  .fa-solid.fa-envelope {
     color: white;
   }
 }

@@ -54,7 +54,9 @@ function add_card(io, obj::Person)
         <h2>$(obj.name)</h2>
         <p class="title">$(obj.title)</p>
         <p>$(obj.bio)</p>
-        <p>$(obj.email)</p>
+        <a href="mailto:$(obj.email)">
+          <i class="fa fa-solid fa-envelope" aria-hidden="true"></i>
+        </a>
       </div>
     </div>
     """
