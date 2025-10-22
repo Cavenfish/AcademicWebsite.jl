@@ -1,19 +1,47 @@
 /*-----------
     Icons 
 -----------*/
-/* Software Docs */
-.fa-book {
+[data-theme=light] {
+  /* Software Docs */
+}
+[data-theme=light] .fa-book {
   color: black;
+}
+[data-theme=light] {
+  /* GitHub */
+}
+[data-theme=light] .fa-brands.fa-github {
+  color: black;
+}
+[data-theme=light] {
+  /* Email */
+}
+[data-theme=light] .fa-solid.fa-envelope {
+  color: black;
+}
+
+[data-theme=dark] {
+  /* Software Docs */
+}
+[data-theme=dark] .fa-book {
+  color: white;
+}
+[data-theme=dark] {
+  /* GitHub */
+}
+[data-theme=dark] .fa-brands.fa-github {
+  color: white;
+}
+[data-theme=dark] {
+  /* Email */
+}
+[data-theme=dark] .fa-solid.fa-envelope {
+  color: white;
 }
 
 /* Google Scholar */
 .fa-graduation-cap {
   color: #4c9cf1;
-}
-
-/* GitHub */
-.fa-brands.fa-github {
-  color: black;
 }
 
 /* ORCID */
