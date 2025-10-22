@@ -129,7 +129,6 @@ serve()
 - [ ] Make everything prettier (subjective but still important)
 - [ ] Add more cover styles
 - [ ] Add color themes (like cover style but for site colors)
-- [ ] Add icons to team cards
 - [ ] Refactor sass for better organization
 - [ ] Make news feed
 - [ ] Add RSS for blog
