@@ -4,9 +4,9 @@ name = "Software"
 +++
 
 \software{
-    "Academic-Website",
+    "AcademicWebsite.jl",
     "A template for academic websites using Franklin.jl",
-    repo="https://github.com/Cavenfish/Academic-Website"
+    repo="https://github.com/Cavenfish/AcademicWebsite.jl"
 }
 
 \software{
