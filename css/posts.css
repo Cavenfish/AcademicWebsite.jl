@@ -22,18 +22,29 @@ Set your website theme here.
   --tertiary-fg: #fd4c4c;
 }
 
+.post-link {
+  text-decoration: none;
+  display: block;
+  transition: all 0.3s ease;
+}
+.post-link:hover .post {
+  background-color: var(--secondary-bg);
+  opacity: 0.8;
+  transform: translateY(-2px);
+}
+
 .post {
   width: 100%;
   height: 100%;
+  padding: 1rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
 }
 .post .title {
   color: var(--secondary-fg);
 }
 .post .title h1 {
   margin-bottom: 5px;
-}
-.post .title h1 a {
-  text-decoration: none;
   color: var(--secondary-fg);
 }
 .post .blurb {
