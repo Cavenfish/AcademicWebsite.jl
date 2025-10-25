@@ -1,6 +1,6 @@
 name = "AcademicWebsite"
 uuid = "bf8d10fa-a935-41a3-9f31-ee6ce4bca516"
-version = "0.1.1"
+version = "0.1.2"
 
 [deps]
 TOML = "fa267f1f-6049-4f14-aa54-33bafae1ed76"
