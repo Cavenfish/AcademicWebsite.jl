@@ -1,20 +1,33 @@
 @use "vars";
 @use "../_assets/theme" as theme;
 
+.post-link {
+  text-decoration: none;
+  display: block;
+  transition: all 0.3s ease;
+
+  &:hover {
+    .post {
+      background-color: var(--secondary-bg);
+      opacity: 0.9;
+      transform: translateY(-2px);
+    }
+  }
+}
+
 .post {
   width: 100%;
   height: 100%;
+  padding: 1rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
 
   .title {
     color: var(--secondary-fg);
 
     h1 {
       margin-bottom: 5px;
-
-      a {
-        text-decoration: none;
-        color: var(--secondary-fg);
-      }
+      color: var(--secondary-fg);
     }
   }
 
