@@ -124,6 +124,16 @@ using Franklin
 serve()
 ```
 
+## Support the Project
+
+If you find AcademicWebsite.jl useful, please consider [starring the repository on GitHub](https://github.com/Cavenfish/AcademicWebsite.jl). Your support helps increase the visibility of the project and encourages further development!
+
+## Feedback & Contributions
+
+Feedback from users is extremely valuable. If you have feature requests, ideas for improvements, or notice any bugs, please voice it! You can open an [issue](https://github.com/Cavenfish/AcademicWebsite.jl/issues) for suggestions or bug reports, and pull requests are always welcome if you'd like to contribute directly.
+
+Whether it's a small typo, a new feature, or a bug fix, your input helps make AcademicWebsite.jl better for everyone!
+
 ## To Do
 
 - [ ] Make everything prettier (subjective but still important)
