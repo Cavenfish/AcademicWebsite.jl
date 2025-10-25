@@ -4,7 +4,8 @@
 .software {
   margin-top: 10px;
   margin-bottom: 25px;
-  border: 2px solid var(--secondary-bg);
+  box-shadow: 0 0 8px 4px var(--tertiary-bg);
+  border: 2px solid var(--primary-fg);
   border-radius: 20px;
   display: block;
 
