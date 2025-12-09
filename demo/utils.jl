@@ -10,6 +10,7 @@ include("./utils/cards.jl")
 include("./utils/nav.jl")
 include("./utils/software.jl")
 include("./utils/posts.jl")
+include("./utils/gallery.jl")
 
 hfun_author_name() = CONF["general"]["author"]
 hfun_author_bio() = CONF["general"]["my_bio"]

@@ -1,0 +1,63 @@
+@use "vars";
+@use "../_assets/theme" as theme;
+
+/* gallery wrapper container */
+.gallery-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* each gallery item */
+.gallery {
+  box-sizing: border-box;
+  background: transparent;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+
+  /* subtle lift on hover */
+  &:hover {
+    transform: translateY(-6px);
+  }
+
+  /* image area */
+  .gallery-img {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+
+    img {
+      display: block;
+      width: 100%;
+      padding: 0;
+      object-fit: cover;
+      border-radius: 6px;
+      border: 1px solid var(--primary-fg);
+    }
+  }
+}
+
+/* Responsive columns */
+@media (max-width: 1024px) {
+  .gallery-wrapper {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .gallery-wrapper {
+    grid-template-columns: 1fr; /* single column on mobile */
+    gap: 12px;
+  }
+
+  .gallery-img img {
+    height: 160px; /* slightly smaller on mobile */
+  }
+}
