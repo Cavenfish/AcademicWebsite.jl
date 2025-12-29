@@ -10,6 +10,7 @@ $themes: (
     "primary-fg": #000000,
     "secondary-fg": #9b4d5f,
     "tertiary-fg": #b85b74,
+    "link-color": #0000ff,
   ),
   "dark": (
     "primary-bg": #2e2c2c,
@@ -18,6 +19,7 @@ $themes: (
     "primary-fg": #ffffff,
     "secondary-fg": #e90e0e,
     "tertiary-fg": #fd4c4c,
+    "link-color": #0000ff,
   ),
 );
 
@@ -33,3 +35,6 @@ $small-font: 14px;
 $footer-font-stack: Arial, serif;
 $footer-text-color: #a6a2a0;
 $footer-font-size: 16px;
+
+// Etc.
+$link-decoration: none;
