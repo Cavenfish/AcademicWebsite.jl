@@ -22,12 +22,6 @@ function add_gallery_item(io, obj::GalleryItem)
   )
 end
 
-function parse_gallery_item(item)
-
-
-  obj
-end
-
 @lx function makeGallery(img_dir)
   io  = IOBuffer()
 
@@ -53,6 +47,17 @@ end
   end
 
   write(io, "</div>")
+
+  write(
+    io, 
+    """
+    <div id="galleryModal" class="gallery-modal">
+      <span class="close">&times;</span>
+    </div>
+    """
+  )
+
+  write(io, """<script src="/libs/scripts/gallery-modal.js"></script>""")
 
   take!(io) |> String |> html
 end
